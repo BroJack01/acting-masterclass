@@ -1,0 +1,125 @@
+{
+  "id": "P1L1",
+  "phase": 1,
+  "lesson": 1,
+  "title": "Who Is An Actor",
+  "phase_name": "Phase One — The Interior",
+  "epigraph": {
+    "quote": "An actor is not someone who pretends to feel. An actor is someone who agrees to be changed by what the story requires. That agreement — made before the camera rolls, before the curtain rises, before the audience arrives — is the whole of it.",
+    "attribution": "Brother Jack"
+  },
+  "acts": [
+    {
+      "number": "ONE",
+      "title": "The First Question",
+      "blocks": [
+        { "type": "slug",     "text": "INT. BLACK BOX THEATRE — NIGHT" },
+        { "type": "action",   "text": "The bare stage. The single bulb. The chalk circle still on the floor from the orientation." },
+        { "type": "action",   "text": "BROTHER JACK stands outside the circle. THE APPRENTICE sits inside it. The space between them is the lesson." },
+        { "type": "character","text": "BROTHER JACK" },
+        { "type": "dialogue", "text": "Who are you?" },
+        { "type": "action",   "text": "She opens her mouth." },
+        { "type": "character","text": "BROTHER JACK" },
+        { "type": "dialogue", "text": "Not your name." },
+        { "type": "paren",    "text": "a beat" },
+        { "type": "dialogue", "text": "Not your credits. Not where you trained. Not what roles you have played." },
+        { "type": "paren",    "text": "a long beat" },
+        { "type": "dialogue", "text": "Who are you." },
+        { "type": "action",   "text": "She is silent. This is not a failure. This is the beginning of the lesson." },
+        { "type": "character","text": "BROTHER JACK" },
+        { "type": "paren",    "text": "sitting" },
+        { "type": "dialogue", "text": "Most actors spend their entire careers answering a different question." },
+        { "type": "dialogue", "text": "What can I play? What do I look like? What does the market want from me?" },
+        { "type": "paren",    "text": "a beat" },
+        { "type": "dialogue", "text": "And they become very skilled at answering those questions. And completely unable to answer this one." },
+        { "type": "dialogue", "text": "Who are you." },
+        { "type": "action",   "text": "A long silence." },
+        { "type": "character","text": "THE APPRENTICE" },
+        { "type": "paren",    "text": "carefully" },
+        { "type": "dialogue", "text": "I am an actor." },
+        { "type": "character","text": "BROTHER JACK" },
+        { "type": "dialogue", "text": "No." },
+        { "type": "paren",    "text": "a beat" },
+        { "type": "dialogue", "text": "That is what you do. I asked who you are." },
+        { "type": "action",   "text": "She looks at the circle around her. At the dot at its centre." }
+      ]
+    },
+    {
+      "number": "TWO",
+      "title": "The Definition",
+      "blocks": [
+        { "type": "slug",     "text": "INT. BLACK BOX THEATRE — CONTINUOUS" },
+        { "type": "character","text": "BROTHER JACK" },
+        { "type": "dialogue", "text": "An actor is a person who agrees to be changed." },
+        { "type": "paren",    "text": "a beat" },
+        { "type": "dialogue", "text": "Not to perform change. Not to simulate it. Not to indicate it for the camera." },
+        { "type": "dialogue", "text": "To actually be altered by what the story requires." },
+        { "type": "action",   "text": "He stands. Walks around the circle's edge." },
+        { "type": "character","text": "BROTHER JACK" },
+        { "type": "dialogue", "text": "A surgeon becomes a surgeon through training. The training changes the person — their hands, their vision, their capacity for precision under pressure." },
+        { "type": "dialogue", "text": "A soldier becomes a soldier through training. Different person before and after. Not pretending to be a soldier. Being one." },
+        { "type": "paren",    "text": "a beat" },
+        { "type": "dialogue", "text": "An actor becomes an actor the same way. Not through accumulating roles. Through being changed by the work. Progressively. Permanently. Until the person who entered the training and the person who emerges from it are recognisably different." },
+        { "type": "character","text": "THE APPRENTICE" },
+        { "type": "dialogue", "text": "Different how?" },
+        { "type": "character","text": "BROTHER JACK" },
+        { "type": "dialogue", "text": "More available. More present. More capable of receiving what another person gives — in a scene, in a room, in a life — and being genuinely moved by it." },
+        { "type": "paren",    "text": "a beat" },
+        { "type": "dialogue", "text": "Less defended. Less managed. Less committed to being seen in a particular light." },
+        { "type": "dialogue", "text": "More willing to be seen as you actually are." },
+        { "type": "action",   "text": "He stops. Directly in front of her." },
+        { "type": "character","text": "BROTHER JACK" },
+        { "type": "paren",    "text": "the line that carries the lesson" },
+        { "type": "dialogue", "text": "That willingness — to be seen as you actually are — is not a technique." },
+        { "type": "dialogue", "text": "It is a person." },
+        { "type": "dialogue", "text": "And this curriculum is going to build that person." },
+        { "type": "dialogue", "text": "Starting with who you already are." },
+        { "type": "dialogue", "text": "Before we add anything." }
+      ]
+    },
+    {
+      "number": "THREE",
+      "title": "The Hobby and the Calling",
+      "blocks": [
+        { "type": "slug",     "text": "INT. BLACK BOX THEATRE — LATER" },
+        { "type": "action",   "text": "The lesson has been going for a while. The Apprentice is more present than when she arrived. The circle has done something. Or Brother Jack has. Or the question." },
+        { "type": "character","text": "BROTHER JACK" },
+        { "type": "dialogue", "text": "There are people who act as a hobby. Who enjoy it. Who are good at it. Who bring genuine feeling to the work and receive genuine satisfaction from the doing of it." },
+        { "type": "paren",    "text": "a beat" },
+        { "type": "dialogue", "text": "This curriculum is not for them." },
+        { "type": "character","text": "THE APPRENTICE" },
+        { "type": "dialogue", "text": "Why not?" },
+        { "type": "character","text": "BROTHER JACK" },
+        { "type": "dialogue", "text": "Because a hobby is something you do when it pleases you. A calling is something you do because it will not leave you alone." },
+        { "type": "paren",    "text": "a beat" },
+        { "type": "dialogue", "text": "The person who acts as a hobby can stop when the conditions are wrong. When the pay is too low. When the role is beneath them. When life offers something more comfortable." },
+        { "type": "dialogue", "text": "The person who acts because it is a calling — cannot stop. Not really. Because the calling is not about the conditions. The calling is about the truth that needs to be carried. And the person who was chosen to carry it." },
+        { "type": "paren",    "text": "a long beat" },
+        { "type": "dialogue", "text": "You are here. In this room. Having found this curriculum. Having begun." },
+        { "type": "dialogue", "text": "That is not an accident." },
+        { "type": "paren",    "text": "a beat — the question that carries the lesson forward" },
+        { "type": "dialogue", "text": "The question is not whether you can act." },
+        { "type": "dialogue", "text": "The question is whether you are willing to become the person the work requires." },
+        { "type": "action",   "text": "The bulb swings slightly. The circle on the floor holds." },
+        { "type": "character","text": "BROTHER JACK" },
+        { "type": "paren",    "text": "very quietly" },
+        { "type": "dialogue", "text": "That question — answered honestly — is the whole of Phase One." }
+      ]
+    }
+  ],
+  "direct_address": {
+    "intro": "To you. Directly.",
+    "blocks": [
+      { "type": "address", "text": "You have just received the first question the curriculum will ask you. It will ask it many times, in many forms, across four phases." },
+      { "type": "address", "text": "Who are you." },
+      { "type": "address", "text": "Not the answer you give in auditions. Not the biography on your social media. Not the version of yourself that you have decided is safe to show to rooms full of people who are deciding whether to invest in you." },
+      { "type": "address", "text": "The true answer. The one that is inconvenient. The one that includes the things you would prefer not to carry into a professional context. The wound. The want. The thing you came to acting to say that you have never found a way to say directly." },
+      { "type": "address", "text": "That answer is the foundation of everything Phase One builds. Do not rush past it. Do not perform it for the lesson requirement. Sit with it." },
+      { "type": "address", "text": "The curriculum will wait." }
+    ]
+  },
+  "requirement": {
+    "hashtag": "#JoelhoodP1L1",
+    "prompt": "Post one thing this lesson changed about how you understand what an actor is. Not a summary of the lesson. One thing that shifted in you. Include #JoelhoodP1L1."
+  }
+}
