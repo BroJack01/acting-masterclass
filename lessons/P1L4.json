@@ -1,0 +1,276 @@
+{
+  "id": "P1L4",
+  "phase": 1,
+  "lesson": 4,
+  "title": "The Actor's Journey",
+  "phase_name": "Phase One — The Interior",
+  "epigraph": {
+    "quote": "Every actor who stayed long enough to become one passed through the same fire. Not the same circumstances. The same fire. The moment they decided. And the moment they almost didn't.",
+    "attribution": "Brother Jack"
+  },
+  "acts": [
+    {
+      "number": "ONE",
+      "title": "The Decision",
+      "blocks": [
+        {
+          "type": "slug",
+          "text": "INT. BLACK BOX THEATRE — NIGHT"
+        },
+        {
+          "type": "action",
+          "text": "The chalk circle. The candle. The end of Phase One approaching."
+        },
+        {
+          "type": "action",
+          "text": "Brother Jack stands at the board. On it — a single word: DECIDED."
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "There was a moment when you decided."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "Not when you first thought about it. Not when someone suggested it. Not when you attended a workshop or watched a film that moved you."
+        },
+        {
+          "type": "paren",
+          "text": "a long beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "The moment you decided."
+        },
+        {
+          "type": "dialogue",
+          "text": "When the internal argument ended."
+        },
+        {
+          "type": "dialogue",
+          "text": "When the voice that said 'this is not practical' was answered by something older and louder."
+        },
+        {
+          "type": "dialogue",
+          "text": "When you stopped negotiating with yourself."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "That moment is not a memory. It is a resource."
+        },
+        {
+          "type": "dialogue",
+          "text": "It is the most honest answer to 'why are you here' that you have."
+        },
+        {
+          "type": "dialogue",
+          "text": "And you will need it. In every room that tries to make you forget."
+        }
+      ]
+    },
+    {
+      "number": "TWO",
+      "title": "The Almost",
+      "blocks": [
+        {
+          "type": "slug",
+          "text": "INT. BLACK BOX THEATRE — CONTINUOUS"
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "There was also a moment when you almost didn't."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "When the practical argument won temporarily. When you took the other job. Enrolled in the other programme. Told yourself this was not realistic."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "When someone you respected told you to be sensible."
+        },
+        {
+          "type": "dialogue",
+          "text": "And you almost listened."
+        },
+        {
+          "type": "character",
+          "text": "THE APPRENTICE"
+        },
+        {
+          "type": "paren",
+          "text": "quietly"
+        },
+        {
+          "type": "dialogue",
+          "text": "How do you know there was an almost?"
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "Because there is always an almost."
+        },
+        {
+          "type": "paren",
+          "text": "a long beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "The calling does not arrive without resistance. If it arrived easily — without cost, without doubt, without someone or something telling you it was wrong — it was not a calling."
+        },
+        {
+          "type": "dialogue",
+          "text": "It was a preference."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "Preferences do not sustain careers."
+        },
+        {
+          "type": "dialogue",
+          "text": "Callings do."
+        },
+        {
+          "type": "dialogue",
+          "text": "Because callings survive the almost."
+        }
+      ]
+    },
+    {
+      "number": "THREE",
+      "title": "Phase One Closes",
+      "blocks": [
+        {
+          "type": "slug",
+          "text": "INT. BLACK BOX THEATRE — THE END OF PHASE ONE"
+        },
+        {
+          "type": "action",
+          "text": "The candle burns lower. The chalk circle still on the floor. The Apprentice has been somewhere in these lessons that she did not expect."
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "Phase One asked one question in four different ways."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "Who are you. Where do you come from. What is the story you carry. And when did you decide to carry it."
+        },
+        {
+          "type": "paren",
+          "text": "a long beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "The answers to those questions are the foundation."
+        },
+        {
+          "type": "dialogue",
+          "text": "Not technique. Not training. Not the instrument we will build in Phase Two."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "The person."
+        },
+        {
+          "type": "dialogue",
+          "text": "The one who was there before any of this began."
+        },
+        {
+          "type": "dialogue",
+          "text": "And who will be there when all of it is done."
+        },
+        {
+          "type": "paren",
+          "text": "very quietly — the close of Phase One"
+        },
+        {
+          "type": "dialogue",
+          "text": "Know that person."
+        },
+        {
+          "type": "dialogue",
+          "text": "The next phase requires them."
+        },
+        {
+          "type": "action_italic",
+          "text": "He blows out the candle. The circle on the floor remains."
+        }
+      ]
+    }
+  ],
+  "direct_address": {
+    "intro": "To the Apprentice who stayed.",
+    "blocks": [
+      {
+        "type": "address",
+        "text": "Phase One is complete."
+      },
+      {
+        "type": "address",
+        "text": "You went to four questions. You did not always answer them comfortably. That is correct. Comfort is not what Phase One is for."
+      },
+      {
+        "type": "address",
+        "text": "What Phase One is for: establishing the person who will carry everything Phase Two through Four builds. Without that person — clearly seen, honestly known — the technique has nothing to stand on."
+      },
+      {
+        "type": "address",
+        "text": "You have that person now. Or you have begun to find them. That is enough to continue."
+      },
+      {
+        "type": "address",
+        "text": "Phase Two is about the instrument. The body. The voice. The emotional architecture that makes carrying truth possible. It will ask more of you than Phase One. It will also give more."
+      },
+      {
+        "type": "address",
+        "text": "Rest. Then begin."
+      }
+    ]
+  },
+  "requirement": {
+    "hashtag": "#JoelhoodP1L4",
+    "prompt": "Post about the moment you decided this was for you. The real moment. Not the polished version. Include the almost if it exists. Include #JoelhoodP1L4."
+  }
+}
