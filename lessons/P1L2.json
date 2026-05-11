@@ -1,0 +1,320 @@
+{
+  "id": "P1L2",
+  "phase": 1,
+  "lesson": 2,
+  "title": "The History",
+  "phase_name": "Phase One — The Interior",
+  "epigraph": {
+    "quote": "The story is older than flesh. More real than bone. Before the stage, before the script, before the camera — there was a person, a fire, and a truth that needed to travel.",
+    "attribution": "Brother Jack"
+  },
+  "acts": [
+    {
+      "number": "ONE",
+      "title": "Before the Stage",
+      "blocks": [
+        {
+          "type": "slug",
+          "text": "INT. BLACK BOX THEATRE — NIGHT"
+        },
+        {
+          "type": "action",
+          "text": "A screen has been set up. Old. The kind that takes time to assemble. Brother Jack finishes setting it up without rushing."
+        },
+        {
+          "type": "action",
+          "text": "THE APPRENTICE watches. She has learned not to fill his silences."
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "Before Greece. Before Rome. Before the stage was built and the playwright wrote and the director directed."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "There was a fire."
+        },
+        {
+          "type": "dialogue",
+          "text": "And a circle around it."
+        },
+        {
+          "type": "dialogue",
+          "text": "And a person who stood at the centre."
+        },
+        {
+          "type": "action",
+          "text": "He lights a candle. Sets it between them."
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "That person was the Griot."
+        },
+        {
+          "type": "dialogue",
+          "text": "Not a performer. Not an entertainer."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "A carrier."
+        },
+        {
+          "type": "dialogue",
+          "text": "The community's memory. Their warning. Their grief. Their joy. Their identity across generations."
+        },
+        {
+          "type": "dialogue",
+          "text": "The Griot stood in the firelight and gave all of it a body. So it could travel. So it would not be lost."
+        },
+        {
+          "type": "paren",
+          "text": "a long beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "That is where you come from."
+        },
+        {
+          "type": "dialogue",
+          "text": "Not from Hollywood. Not from the West End."
+        },
+        {
+          "type": "paren",
+          "text": "the line that must land"
+        },
+        {
+          "type": "dialogue",
+          "text": "From the fire."
+        },
+        {
+          "type": "dialogue",
+          "text": "From the circle."
+        },
+        {
+          "type": "dialogue",
+          "text": "From the agreement to carry what the community cannot carry alone."
+        }
+      ]
+    },
+    {
+      "number": "TWO",
+      "title": "The Line of Descent",
+      "blocks": [
+        {
+          "type": "slug",
+          "text": "INT. BLACK BOX THEATRE — CONTINUOUS"
+        },
+        {
+          "type": "action",
+          "text": "Images on the screen. Ancient. Greek theatre masks. Elizabethan stages. African ceremonial performance. The progression across centuries."
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "Greece borrowed from Egypt. Rome borrowed from Greece. Europe borrowed from Rome. Hollywood borrowed from Europe."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "And somewhere in that borrowing — the original contract was obscured."
+        },
+        {
+          "type": "dialogue",
+          "text": "The Griot became the actor. The fire became the stage. The circle became the audience."
+        },
+        {
+          "type": "dialogue",
+          "text": "The community became the market."
+        },
+        {
+          "type": "paren",
+          "text": "a long beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "And the actor forgot what they were for."
+        },
+        {
+          "type": "character",
+          "text": "THE APPRENTICE"
+        },
+        {
+          "type": "dialogue",
+          "text": "What were they for?"
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "The same thing they have always been for."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "Carrying the truth the community needs"
+        },
+        {
+          "type": "dialogue",
+          "text": "to the people who need to receive it."
+        },
+        {
+          "type": "dialogue",
+          "text": "Not for profit. Not for applause."
+        },
+        {
+          "type": "paren",
+          "text": "very quietly"
+        },
+        {
+          "type": "dialogue",
+          "text": "Because the truth does not survive without a carrier."
+        },
+        {
+          "type": "dialogue",
+          "text": "And the carrier does not survive without the truth."
+        }
+      ]
+    },
+    {
+      "number": "THREE",
+      "title": "The African Actor",
+      "blocks": [
+        {
+          "type": "slug",
+          "text": "INT. BLACK BOX THEATRE — LATER"
+        },
+        {
+          "type": "action",
+          "text": "The candle still burning. The screen dark. Just the two of them and the flame."
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "You are an African actor."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "That is not a limitation. That is a lineage."
+        },
+        {
+          "type": "dialogue",
+          "text": "You come from the oldest performance tradition on earth."
+        },
+        {
+          "type": "dialogue",
+          "text": "The Griot did not wait for a Western institution to validate the work."
+        },
+        {
+          "type": "dialogue",
+          "text": "The Griot stood up."
+        },
+        {
+          "type": "dialogue",
+          "text": "In the firelight."
+        },
+        {
+          "type": "dialogue",
+          "text": "And began."
+        },
+        {
+          "type": "paren",
+          "text": "a long beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "The African film industry is growing. It is connecting to global markets in ways that were not possible ten years ago."
+        },
+        {
+          "type": "dialogue",
+          "text": "And what it needs — what the global market does not yet have enough of —"
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "is actors who know what they are for."
+        },
+        {
+          "type": "dialogue",
+          "text": "Who carry the truth with the Griot's understanding."
+        },
+        {
+          "type": "dialogue",
+          "text": "Not the performer's ego."
+        },
+        {
+          "type": "paren",
+          "text": "very quietly"
+        },
+        {
+          "type": "dialogue",
+          "text": "That is what this curriculum is building."
+        },
+        {
+          "type": "dialogue",
+          "text": "From the inside out."
+        }
+      ]
+    }
+  ],
+  "direct_address": {
+    "intro": "To you. Your lineage.",
+    "blocks": [
+      {
+        "type": "address",
+        "text": "You come from the oldest performance tradition on earth. Before Greece. Before any of the institutions that will one day offer or deny you their approval. Before any of the systems that will one day determine whether your career is considered successful."
+      },
+      {
+        "type": "address",
+        "text": "Before all of that — there was the fire. And the Griot. And the community that needed what the Griot was carrying."
+      },
+      {
+        "type": "address",
+        "text": "You are that Griot's descendant. Not metaphorically. Actually. The line runs from the first fire to the camera you will one day stand in front of. Unbroken."
+      },
+      {
+        "type": "address",
+        "text": "Carry that knowledge into every room you enter. It changes the quality of your presence in ways no technique can replicate."
+      }
+    ]
+  },
+  "requirement": {
+    "hashtag": "#JoelhoodP1L2",
+    "prompt": "Post about the Griot. What the story of performance origins means to you as an African actor. Not what the lesson said. What it meant to you. Include #JoelhoodP1L2."
+  }
+}
