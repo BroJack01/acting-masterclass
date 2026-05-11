@@ -1,0 +1,156 @@
+{
+  "id": "P4L2",
+  "phase": 4,
+  "lesson": 2,
+  "title": "The Agent",
+  "phase_name": "Phase Four — The World",
+  "epigraph": {
+    "quote": "The actor who refuses representation does not announce independence. They announce that they do not understand the industry they are trying to enter.",
+    "attribution": "Brother Jack"
+  },
+  "acts": [
+    {
+      "number": "ONE",
+      "title": "The Resistance",
+      "blocks": [
+        {
+          "type": "slug",
+          "text": "INT. BROTHER JACK'S WORKSPACE — MORNING"
+        },
+        {
+          "type": "action",
+          "text": "A third chair. THE AGENT sits in it. A professional. The particular ease of someone who has been in many rooms and learned to read them."
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "Agents take your money."
+        },
+        {
+          "type": "paren",
+          "text": "the first resistance — named before she can raise it"
+        },
+        {
+          "type": "dialogue",
+          "text": "Wrong. An agent earns a commission — ten to fifteen percent — only when you earn. Their income is entirely dependent on your success. That is the most perfectly aligned professional relationship you will ever have."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "Agents are exploiters."
+        },
+        {
+          "type": "paren",
+          "text": "the second"
+        },
+        {
+          "type": "dialogue",
+          "text": "A bad agent does not make representation wrong. It makes that agent wrong. The answer to a bad doctor is not to stop taking medicine."
+        }
+      ]
+    },
+    {
+      "number": "TWO",
+      "title": "The Truth Demonstrated",
+      "blocks": [
+        {
+          "type": "slug",
+          "text": "INT. BROTHER JACK'S WORKSPACE — CONTINUOUS"
+        },
+        {
+          "type": "character",
+          "text": "THE AGENT"
+        },
+        {
+          "type": "dialogue",
+          "text": "Two actors. Same market. Same time. Same talent."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "The unrepresented actor earned thirty percent less for comparable work. Not because anyone cheated her. Because she did not know the market rate. Because no one who knew it was in the room when the offer was made."
+        },
+        {
+          "type": "paren",
+          "text": "a long beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "She also missed roles she was right for. Because the casting director for those productions did not accept direct submissions."
+        }
+      ]
+    },
+    {
+      "number": "THREE",
+      "title": "What You Owe",
+      "blocks": [
+        {
+          "type": "slug",
+          "text": "INT. BROTHER JACK'S WORKSPACE — LATER"
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "Before you go looking for an agent — look back."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "Is there someone in your past who made a call for you? Who put your name in a room it would not otherwise have reached? Who spent something they had earned so you could go somewhere you could not reach alone?"
+        },
+        {
+          "type": "paren",
+          "text": "a long beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "That person was your agent. Before you knew what an agent was."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "An 'I owe you one' costs nothing and means everything."
+        },
+        {
+          "type": "paren",
+          "text": "very quietly"
+        },
+        {
+          "type": "dialogue",
+          "text": "Settle what you owe. In whatever currency is appropriate. Then go forward."
+        }
+      ]
+    }
+  ],
+  "direct_address": {
+    "intro": "To you.",
+    "blocks": [
+      {
+        "type": "address",
+        "text": "Find your agent. But first — look back. Name the people who vouched for you. Go to them. Name what they did. That accounting is not optional. It is the first act of a professional who understands what representation costs."
+      }
+    ]
+  },
+  "requirement": {
+    "hashtag": "#JoelhoodP4L2",
+    "prompt": "Post about someone who vouched for you. Who put your name in a room. Name them if they allow it. Say specifically what they did. Say what you owe. Public. On record. Include #JoelhoodP4L2."
+  }
+}
