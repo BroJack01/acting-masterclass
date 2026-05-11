@@ -1,0 +1,276 @@
+{
+  "id": "P2L1",
+  "phase": 2,
+  "lesson": 1,
+  "title": "The Treasure Chest",
+  "phase_name": "Phase Two — The Instrument",
+  "epigraph": {
+    "quote": "The actor's instrument is not built from imagination. It is built from memory. Specific memory. The kind that still has weight when you touch it. That is the treasure. And the chest has always been you.",
+    "attribution": "Brother Jack"
+  },
+  "acts": [
+    {
+      "number": "ONE",
+      "title": "The Marrow",
+      "blocks": [
+        {
+          "type": "slug",
+          "text": "INT. LIBRARY — NIGHT"
+        },
+        {
+          "type": "action",
+          "text": "The table. The candle. The mirror still facing the wall. The Apprentice arrives carrying something she did not arrive with before — the slight weight of the previous lesson. She has been to a door."
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "There is a place in an actor where the real material lives."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "Not in the imagination. Not in the technique. Not in the research."
+        },
+        {
+          "type": "paren",
+          "text": "a long beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "In the marrow."
+        },
+        {
+          "type": "dialogue",
+          "text": "The place that holds the actual experience of your actual life."
+        },
+        {
+          "type": "dialogue",
+          "text": "Not what you think happened. What happened."
+        },
+        {
+          "type": "dialogue",
+          "text": "Not how you have chosen to understand it. How it felt before you chose."
+        },
+        {
+          "type": "character",
+          "text": "THE APPRENTICE"
+        },
+        {
+          "type": "dialogue",
+          "text": "How do you access that?"
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "Carefully."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "And specifically."
+        },
+        {
+          "type": "dialogue",
+          "text": "Not by asking yourself to feel. Feeling on command is performance."
+        },
+        {
+          "type": "dialogue",
+          "text": "By asking yourself to remember. Specifically. As if you are reporting what you saw."
+        }
+      ]
+    },
+    {
+      "number": "TWO",
+      "title": "The Exercise",
+      "blocks": [
+        {
+          "type": "slug",
+          "text": "INT. LIBRARY — CONTINUOUS"
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "Think of a moment. A real one. Small is better than large."
+        },
+        {
+          "type": "dialogue",
+          "text": "Not a tragedy. Not a triumph. A moment when you felt something clearly."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "Now — do not describe the feeling."
+        },
+        {
+          "type": "dialogue",
+          "text": "Describe the room."
+        },
+        {
+          "type": "dialogue",
+          "text": "What was on the walls. What the light was doing. What you could smell."
+        },
+        {
+          "type": "dialogue",
+          "text": "The exact position of the other person. What they were wearing."
+        },
+        {
+          "type": "dialogue",
+          "text": "The sound underneath the conversation."
+        },
+        {
+          "type": "paren",
+          "text": "a long beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "The feeling is in the specifics."
+        },
+        {
+          "type": "dialogue",
+          "text": "Not in the word for the feeling."
+        },
+        {
+          "type": "dialogue",
+          "text": "In the smell. The light. The exact distance between you and the other person."
+        },
+        {
+          "type": "action",
+          "text": "She tries. Closes her eyes. Opens them. Begins describing — not the feeling, the room."
+        },
+        {
+          "type": "action",
+          "text": "Something changes in her voice. Not performance. The actual thing."
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "paren",
+          "text": "very quietly"
+        },
+        {
+          "type": "dialogue",
+          "text": "There."
+        },
+        {
+          "type": "dialogue",
+          "text": "That is the marrow."
+        },
+        {
+          "type": "dialogue",
+          "text": "Now you know where it is."
+        }
+      ]
+    },
+    {
+      "number": "THREE",
+      "title": "Visible and Vulnerable",
+      "blocks": [
+        {
+          "type": "slug",
+          "text": "INT. LIBRARY — LATER"
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "There is a difference between being visible and being vulnerable."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "Most actors want to be visible. To be seen. To be noticed. To be chosen."
+        },
+        {
+          "type": "dialogue",
+          "text": "Very few actors are willing to be vulnerable."
+        },
+        {
+          "type": "dialogue",
+          "text": "To be seen as they actually are. Not as they hope to appear."
+        },
+        {
+          "type": "paren",
+          "text": "a long beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "The marrow is where vulnerability lives."
+        },
+        {
+          "type": "dialogue",
+          "text": "The treasure chest is everything you have experienced that has left a mark."
+        },
+        {
+          "type": "dialogue",
+          "text": "Not the marks you show. All of them."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "The actor who can access that chest — and offer its contents in service of a story —"
+        },
+        {
+          "type": "paren",
+          "text": "the line"
+        },
+        {
+          "type": "dialogue",
+          "text": "does not need to perform."
+        },
+        {
+          "type": "dialogue",
+          "text": "They simply — remember."
+        },
+        {
+          "type": "dialogue",
+          "text": "And the remembering does the work."
+        }
+      ]
+    }
+  ],
+  "direct_address": {
+    "intro": "To you. Your material.",
+    "blocks": [
+      {
+        "type": "address",
+        "text": "The marrow is not a technique. It is a location. Once you know where it is — you can return to it. In preparation. In performance. In the moments when the scene asks for something real and technique alone cannot deliver it."
+      },
+      {
+        "type": "address",
+        "text": "The treasure chest exercise is the foundation of everything Phase Two builds. Practice it between lessons. Not dramatically. As a daily discipline. Remember something specifically. Describe the room, not the feeling. Notice what the feeling does when the specifics arrive."
+      }
+    ]
+  },
+  "requirement": {
+    "hashtag": "#JoelhoodP2L1",
+    "prompt": "Post one thing from your treasure chest. One real memory. Described specifically — not emotionally. The room, the light, the exact detail. Let the reader feel what you felt through what you saw. Include #JoelhoodP2L1."
+  }
+}
