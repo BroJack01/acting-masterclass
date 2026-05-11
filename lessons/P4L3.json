@@ -1,0 +1,220 @@
+{
+  "id": "P4L3",
+  "phase": 4,
+  "lesson": 3,
+  "title": "The Producer",
+  "phase_name": "Phase Four — The World",
+  "epigraph": {
+    "quote": "The rooms you were not in are the reason the room you were in existed.",
+    "attribution": "Brother Jack"
+  },
+  "acts": [
+    {
+      "number": "ONE",
+      "title": "What the Producer Did",
+      "blocks": [
+        {
+          "type": "slug",
+          "text": "INT. BROTHER JACK'S WORKSPACE — MORNING"
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "Before you sat in the casting chair — before the camera rolled — before the script was in your hands —"
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "what do you think was happening?"
+        },
+        {
+          "type": "action",
+          "text": "She answers. Development. Pre-production. He walks her through what those words actually mean."
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "The production process is not a game. It is not an argument. It is not a debate."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "It cost money."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "More than money."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "And it is the producer who pays all of it."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "All of it."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "All of it."
+        }
+      ]
+    },
+    {
+      "number": "TWO",
+      "title": "The Misconception and the Word",
+      "blocks": [
+        {
+          "type": "slug",
+          "text": "INT. BROTHER JACK'S WORKSPACE — CONTINUOUS"
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "The actor who uses their platform to pressure a producer — who renegotiates after an agreement from a position of leverage —"
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "calls this creative control. Artistic integrity. Knowing their worth."
+        },
+        {
+          "type": "paren",
+          "text": "a long beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "I have a different name for it."
+        },
+        {
+          "type": "paren",
+          "text": "a beat — the word arriving without drama"
+        },
+        {
+          "type": "dialogue",
+          "text": "Extortion."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "The producer believed in you enough to build their project around you. And some actors respond to that belief by using it against the person who held it."
+        }
+      ]
+    },
+    {
+      "number": "THREE",
+      "title": "The Correct Relationship",
+      "blocks": [
+        {
+          "type": "slug",
+          "text": "INT. BROTHER JACK'S WORKSPACE — AFTERNOON"
+        },
+        {
+          "type": "action",
+          "text": "The triangle on the desk between them."
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "The producer sees the whole. The actor inhabits the part."
+        },
+        {
+          "type": "dialogue",
+          "text": "These are not competing authorities. They are complementary ones."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "The question that resolves all disagreement:"
+        },
+        {
+          "type": "paren",
+          "text": "a long beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "What does the story need?"
+        },
+        {
+          "type": "action",
+          "text": "The Apprentice looks at the triangle. Then:"
+        },
+        {
+          "type": "character",
+          "text": "THE APPRENTICE"
+        },
+        {
+          "type": "dialogue",
+          "text": "The producer paid for the room. The author wrote what the room was for. My job is to make the room worth what it cost."
+        },
+        {
+          "type": "paren",
+          "text": "a beat — arriving at the full thing"
+        },
+        {
+          "type": "dialogue",
+          "text": "Not for the producer. For the audience who will sit in it."
+        }
+      ]
+    }
+  ],
+  "direct_address": {
+    "intro": "To you.",
+    "blocks": [
+      {
+        "type": "address",
+        "text": "The producer who made your first production possible — do you know what they did before you arrived? The rooms you were not in are the reason the room you were in existed."
+      },
+      {
+        "type": "address",
+        "text": "Know what the producer did. Before you arrived. Know what it cost. And bring to the partnership what only you can bring — without using it as a weapon."
+      }
+    ]
+  },
+  "requirement": {
+    "hashtag": "#JoelhoodP4L3",
+    "prompt": "Post about a production you have been part of. Name one thing the producer did that you did not know about at the time — that you understand now. What did it cost them? Include #JoelhoodP4L3."
+  }
+}
