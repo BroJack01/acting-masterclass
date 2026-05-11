@@ -1,0 +1,160 @@
+{
+  "id": "P4L5",
+  "phase": 4,
+  "lesson": 5,
+  "title": "Etiquette",
+  "phase_name": "Phase Four — The World",
+  "epigraph": {
+    "quote": "The curtain does not end the performance. The Griot who carried the truth in the firelight carried it in the village too. That is what the community trusted. Not the performance. The person.",
+    "attribution": "Brother Jack"
+  },
+  "acts": [
+    {
+      "number": "ONE",
+      "title": "The Curtain Does Not End",
+      "blocks": [
+        {
+          "type": "slug",
+          "text": "INT. BROTHER JACK'S WORKSPACE — MORNING"
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "The actor who is magnificent on stage and dismissive in the green room has not understood what performance is."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "They think the performance happens in the lights. The community knows it happens in everything."
+        },
+        {
+          "type": "paren",
+          "text": "a long beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "Etiquette is not a list of rules."
+        },
+        {
+          "type": "paren",
+          "text": "the definition"
+        },
+        {
+          "type": "dialogue",
+          "text": "The daily, lived expression of the prior contract. In every room. On every set. In every public encounter. Online. In private. When no one is watching and especially when everyone is."
+        }
+      ]
+    },
+    {
+      "number": "TWO",
+      "title": "The Set",
+      "blocks": [
+        {
+          "type": "slug",
+          "text": "INT. FILM SET — DAY"
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "Count them."
+        },
+        {
+          "type": "action",
+          "text": "Thirty-two people. Every one in service of the same story."
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "A late actor is not making a personal choice about their morning. They are making a professional choice about thirty-two people's time."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "The actor who treats crew as invisible has not understood what a set is. The crew knows the difference between performed warmth and genuine respect. They remember. The industry is a village."
+        }
+      ]
+    },
+    {
+      "number": "THREE",
+      "title": "The Stage That Never Closes",
+      "blocks": [
+        {
+          "type": "slug",
+          "text": "INT. BROTHER JACK'S WORKSPACE — AFTERNOON"
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "Before you post — one question."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "Does this serve the truth or only the moment's appetite?"
+        },
+        {
+          "type": "paren",
+          "text": "a long beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "Write it. Wait. Ask again. If the answer is still only yourself — delete it. The public record is permanent. The feeling passes."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "You are building the market. Every day. Whether you intend to or not. The African actor who builds a reputation for integrity is not just building their own career."
+        },
+        {
+          "type": "paren",
+          "text": "the close"
+        },
+        {
+          "type": "dialogue",
+          "text": "They are building the market for the actor who comes after them."
+        }
+      ]
+    }
+  ],
+  "direct_address": {
+    "intro": "To you.",
+    "blocks": [
+      {
+        "type": "address",
+        "text": "Acting is not a hobby or a talent. It is a responsibility. To the craft. To the audience. To the market you are building. To the actor who will inherit that market."
+      },
+      {
+        "type": "address",
+        "text": "That responsibility does not begin when the camera rolls. It does not pause when it stops. It is the way of being that the prior contract requires. Always."
+      }
+    ]
+  },
+  "requirement": {
+    "hashtag": "#JoelhoodP4L5",
+    "prompt": "Post one specific commitment you are making to how you carry the craft outside of performances. Not a vague intention — a specific, measurable, public commitment. On record. Include #JoelhoodP4L5."
+  }
+}
