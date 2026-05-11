@@ -1,0 +1,236 @@
+{
+  "id": "P2L2",
+  "phase": 2,
+  "lesson": 2,
+  "title": "Technique Before Truth",
+  "phase_name": "Phase Two — The Instrument",
+  "epigraph": {
+    "quote": "Technique is not the enemy of truth. Technique is the road truth travels on. A road with no destination is still just a road. A truth with no road never arrives.",
+    "attribution": "Brother Jack"
+  },
+  "acts": [
+    {
+      "number": "ONE",
+      "title": "The Three Bones",
+      "blocks": [
+        {
+          "type": "slug",
+          "text": "INT. LIBRARY — NIGHT"
+        },
+        {
+          "type": "action",
+          "text": "Something new on the table. Old jazz recordings. A record player. Brother Jack puts one on before she arrives. Coltrane. The sound filling the room before any words do."
+        },
+        {
+          "type": "action",
+          "text": "She enters. Listens."
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "Three things. Before truth can be carried."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "Reference. The actor who has no reference — who has not read, watched, listened, observed, accumulated — has no material to draw from when the role requires something they have not personally experienced."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "Practice. The craft must be used to remain available. Not only in productions. Daily. The way Coltrane played scales until his fingers knew them without his mind's involvement. So that when freedom was required — the freedom was there."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "Pantomime. The body must know how to carry truth before the words arrive. Before the text. Before the camera. The body alone. Telling the story."
+        }
+      ]
+    },
+    {
+      "number": "TWO",
+      "title": "The Empty Room",
+      "blocks": [
+        {
+          "type": "slug",
+          "text": "INT. LIBRARY — CONTINUOUS"
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "The actor who cannot work in an empty room cannot work."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "Not an empty set. An empty room. No audience. No camera. No validation."
+        },
+        {
+          "type": "dialogue",
+          "text": "Just the actor and the work."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "If the work only happens when someone is watching — the work is performance."
+        },
+        {
+          "type": "dialogue",
+          "text": "If the work happens whether or not anyone is watching — the work is practice."
+        },
+        {
+          "type": "dialogue",
+          "text": "And practice is what builds the instrument that performance draws from."
+        },
+        {
+          "type": "character",
+          "text": "THE APPRENTICE"
+        },
+        {
+          "type": "dialogue",
+          "text": "But actors need an audience. That is the whole point."
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "The audience is the destination."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "But you do not begin at the destination. You begin at the practice room."
+        },
+        {
+          "type": "dialogue",
+          "text": "And you return to it. Always. Between every production, every role, every camera day."
+        },
+        {
+          "type": "dialogue",
+          "text": "Because the instrument that is not practiced"
+        },
+        {
+          "type": "paren",
+          "text": "very quietly"
+        },
+        {
+          "type": "dialogue",
+          "text": "is not an instrument."
+        },
+        {
+          "type": "dialogue",
+          "text": "It is a memory of one."
+        }
+      ]
+    },
+    {
+      "number": "THREE",
+      "title": "The Chalk Silhouette",
+      "blocks": [
+        {
+          "type": "slug",
+          "text": "INT. LIBRARY — LATER"
+        },
+        {
+          "type": "action",
+          "text": "He has drawn a chalk silhouette on the wall. A human figure. Standing. Arms slightly out."
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "Everything Phase Two will ask of you happens inside this outline."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "Not what you think. Not what you feel. What the body does."
+        },
+        {
+          "type": "dialogue",
+          "text": "Because the audience does not receive your thoughts. They receive your body."
+        },
+        {
+          "type": "dialogue",
+          "text": "The way it moves. The way it holds. The way it responds to what the scene gives it."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "Technique is about the body's readiness to carry whatever truth the scene requires."
+        },
+        {
+          "type": "dialogue",
+          "text": "The marrow gives you the material. Technique gives the material a form the audience can receive."
+        },
+        {
+          "type": "paren",
+          "text": "the closing"
+        },
+        {
+          "type": "dialogue",
+          "text": "Both are necessary."
+        },
+        {
+          "type": "dialogue",
+          "text": "Neither is sufficient without the other."
+        },
+        {
+          "type": "dialogue",
+          "text": "That is Phase Two in its entirety."
+        }
+      ]
+    }
+  ],
+  "direct_address": {
+    "intro": "To you. The instrument and the practice.",
+    "blocks": [
+      {
+        "type": "address",
+        "text": "The actors who last are the ones who never stopped practicing in empty rooms. The ones who treated the work between productions as seriously as the work during them."
+      },
+      {
+        "type": "address",
+        "text": "The three bones — reference, practice, pantomime — are not a checklist. They are a daily discipline. Begin building them now, before Phase Two asks them of you explicitly."
+      }
+    ]
+  },
+  "requirement": {
+    "hashtag": "#JoelhoodP2L2",
+    "prompt": "Post about the difference between technique and truth as you now understand it. Not the lesson's definition — yours. In your own words. What does this distinction mean for how you work? Include #JoelhoodP2L2."
+  }
+}
