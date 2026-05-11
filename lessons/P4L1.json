@@ -1,0 +1,188 @@
+{
+  "id": "P4L1",
+  "phase": 4,
+  "lesson": 1,
+  "title": "The Prior Contract",
+  "phase_name": "Phase Four — The World",
+  "epigraph": {
+    "quote": "The Griot did not stand in the firelight because he wanted to be seen. He stood there because the truth needed a body to move through.",
+    "attribution": "Brother Jack"
+  },
+  "acts": [
+    {
+      "number": "ONE",
+      "title": "The Inventory",
+      "blocks": [
+        {
+          "type": "slug",
+          "text": "INT. BROTHER JACK'S WORKSPACE — MORNING"
+        },
+        {
+          "type": "action",
+          "text": "A different kind of room. Not a theatre. A workspace. Scripts on shelves. A desk. A window looking out at the city. The actual world."
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "Some people come to acting for sex."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "Visibility as currency in the marketplace of desire. It is not wrong that it works. Sometimes it does. But the actor performing for that reason is not in the scene. They are in a fantasy."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "Some come for fame. Some for money. Some to feed a private appetite. Some to deliver propaganda."
+        },
+        {
+          "type": "paren",
+          "text": "a long beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "I am not asking you to confess. I am asking you to look. Privately. At the real reason you came. The one underneath the one you tell people."
+        }
+      ]
+    },
+    {
+      "number": "TWO",
+      "title": "The Triangle",
+      "blocks": [
+        {
+          "type": "slug",
+          "text": "INT. BROTHER JACK'S WORKSPACE — CONTINUOUS"
+        },
+        {
+          "type": "action",
+          "text": "A piece of paper on the desk. Three words in a triangle. Author. Producer. Actor. Truth at the centre."
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "The author gives truth a shape."
+        },
+        {
+          "type": "dialogue",
+          "text": "The producer gives truth a stage."
+        },
+        {
+          "type": "dialogue",
+          "text": "The actor gives truth a body."
+        },
+        {
+          "type": "paren",
+          "text": "a long beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "A lie does not travel. Truth is the only reliable investment. The producer who understands this is not your enemy. They are your ally."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "The actor who has no relationship with the author has no position from which to protect the story."
+        }
+      ]
+    },
+    {
+      "number": "THREE",
+      "title": "The Griot's Oath",
+      "blocks": [
+        {
+          "type": "slug",
+          "text": "INT. BROTHER JACK'S WORKSPACE — LATER"
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "The Griot's contract was not written. Not signed. Not witnessed by lawyers."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "It was made in the decision to stand."
+        },
+        {
+          "type": "dialogue",
+          "text": "In the decision to open the mouth and let the truth move through."
+        },
+        {
+          "type": "paren",
+          "text": "a long beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "I empty myself so the truth can fill me."
+        },
+        {
+          "type": "dialogue",
+          "text": "I give the truth my body, my voice, my breath, my presence."
+        },
+        {
+          "type": "dialogue",
+          "text": "Not for myself."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "For the community that needs what I am carrying."
+        },
+        {
+          "type": "action",
+          "text": "He slides the triangle across the desk."
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "Keep it. Put it somewhere you will see it. Before auditions. Before you sign anything. Before you say yes. Before you say no."
+        }
+      ]
+    }
+  ],
+  "direct_address": {
+    "intro": "To you.",
+    "blocks": [
+      {
+        "type": "address",
+        "text": "The prior contract exists before the agent. Before the audition. Before the producer's table. Before the camera rolls. Before any of what Phase Four will teach you."
+      },
+      {
+        "type": "address",
+        "text": "And it supersedes all of it. Every contract you will ever sign is secondary to this one."
+      }
+    ]
+  },
+  "requirement": {
+    "hashtag": "#JoelhoodP4L1",
+    "prompt": "Post your answer to the question: what truth are you committed to carrying? Not the answer that sounds right. The true one. Public. On record. Witnessed. Include #JoelhoodP4L1."
+  }
+}
