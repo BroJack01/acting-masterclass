@@ -1,0 +1,232 @@
+{
+  "id": "P2L3",
+  "phase": 2,
+  "lesson": 3,
+  "title": "Pantomime",
+  "phase_name": "Phase Two — The Instrument",
+  "epigraph": {
+    "quote": "The body knows things the mind has not yet processed. Before the word arrives — the body has already responded. The actor who trains the body to tell the truth without words has the most powerful instrument in the room.",
+    "attribution": "Brother Jack"
+  },
+  "acts": [
+    {
+      "number": "ONE",
+      "title": "The Body First",
+      "blocks": [
+        {
+          "type": "slug",
+          "text": "INT. WAREHOUSE — NIGHT"
+        },
+        {
+          "type": "action",
+          "text": "A different space. Large. Industrial. Cold. The library was intimate. This space requires the body to work harder just to fill it."
+        },
+        {
+          "type": "action",
+          "text": "No furniture. No candle. Just the two of them and a stone on the floor."
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "Before any word you will ever speak in a scene — the body has already told the audience something."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "How you entered the room. Whether you take space or apologise for it. How your hands sit at your sides. What your back does when someone addresses you."
+        },
+        {
+          "type": "paren",
+          "text": "a long beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "The audience reads all of it. Unconsciously. Before the first line."
+        },
+        {
+          "type": "dialogue",
+          "text": "Before the first word has confirmed or denied what the body promised."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "Pantomime trains the body to make those promises with intention."
+        },
+        {
+          "type": "dialogue",
+          "text": "Not as mime. Not as stylised movement."
+        },
+        {
+          "type": "dialogue",
+          "text": "As honest physical expression of an internal state."
+        },
+        {
+          "type": "dialogue",
+          "text": "Without words to hide behind."
+        }
+      ]
+    },
+    {
+      "number": "TWO",
+      "title": "The Three Exercises",
+      "blocks": [
+        {
+          "type": "slug",
+          "text": "INT. WAREHOUSE — CONTINUOUS"
+        },
+        {
+          "type": "action",
+          "text": "He picks up the stone from the floor. Holds it out."
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "Carry this as if it is the heaviest thing you have ever lifted."
+        },
+        {
+          "type": "action",
+          "text": "She does. The body adjusts. Something real arrives in the effort."
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "Now carry it as if it is a sleeping child."
+        },
+        {
+          "type": "action",
+          "text": "The whole body changes. Not a decision. A response."
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "Now carry it as if it is the last thing someone you loved left behind."
+        },
+        {
+          "type": "action",
+          "text": "A pause. Then she carries it. The room changes temperature."
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "paren",
+          "text": "very quietly"
+        },
+        {
+          "type": "dialogue",
+          "text": "Three objects. One stone."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "The stone did not change. The truth did."
+        },
+        {
+          "type": "dialogue",
+          "text": "And the body told each truth without a single word."
+        },
+        {
+          "type": "dialogue",
+          "text": "That is pantomime."
+        },
+        {
+          "type": "dialogue",
+          "text": "That is the body as the primary instrument of meaning."
+        }
+      ]
+    },
+    {
+      "number": "THREE",
+      "title": "Sacred Stillness",
+      "blocks": [
+        {
+          "type": "slug",
+          "text": "INT. WAREHOUSE — LATER"
+        },
+        {
+          "type": "action",
+          "text": "He places the stone at the centre of the floor. Lights a candle beside it."
+        },
+        {
+          "type": "action",
+          "text": "They sit. Five minutes. In silence. The body doing nothing. The body doing everything."
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "paren",
+          "text": "after the silence"
+        },
+        {
+          "type": "dialogue",
+          "text": "The body in stillness communicates more than the body in motion."
+        },
+        {
+          "type": "dialogue",
+          "text": "Because stillness is a choice."
+        },
+        {
+          "type": "dialogue",
+          "text": "And the audience feels the cost of it."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "You don't have to teach the body to feel."
+        },
+        {
+          "type": "paren",
+          "text": "the line"
+        },
+        {
+          "type": "dialogue",
+          "text": "You just have to stop teaching it not to."
+        }
+      ]
+    }
+  ],
+  "direct_address": {
+    "intro": "To you. The body's language.",
+    "blocks": [
+      {
+        "type": "address",
+        "text": "The pantomime work does not stop with this lesson. It is a daily practice. Before rehearsals. Before performance. In the empty room."
+      },
+      {
+        "type": "address",
+        "text": "The stone exercise — repeat it with different objects and different truths. Notice how the body finds the truth before the mind does. That is the instrument learning to lead."
+      }
+    ]
+  },
+  "requirement": {
+    "hashtag": "#JoelhoodP2L3",
+    "prompt": "Post a 60-second silent video. No words. No text on screen. Just you and a physical truth. Carry something real without speaking. Let the body be the entire language. Include #JoelhoodP2L3."
+  }
+}
