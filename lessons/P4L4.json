@@ -1,0 +1,200 @@
+{
+  "id": "P4L4",
+  "phase": 4,
+  "lesson": 4,
+  "title": "Auditions",
+  "phase_name": "Phase Four — The World",
+  "epigraph": {
+    "quote": "An audition is not a test of your worthiness. It is a search for a specific truth that only a specific person can carry. Come as that person. Or don't come at all.",
+    "attribution": "Brother Jack"
+  },
+  "acts": [
+    {
+      "number": "ONE",
+      "title": "Not an Exam",
+      "blocks": [
+        {
+          "type": "slug",
+          "text": "INT. CASTING ROOM — DAY"
+        },
+        {
+          "type": "action",
+          "text": "The casting room. Chair. Table. Camera. The furniture of judgment."
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "paren",
+          "text": "from behind the table — as the casting director"
+        },
+        {
+          "type": "dialogue",
+          "text": "I am not here to judge you. I am here because I have a problem. There is a character in a script. A specific human truth that needs a body. And I do not know yet who carries it."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "I am looking."
+        },
+        {
+          "type": "paren",
+          "text": "a long beat"
+        },
+        {
+          "type": "character",
+          "text": "THE APPRENTICE"
+        },
+        {
+          "type": "dialogue",
+          "text": "In an exam — I'm trying to give the right answer. In a search — I am the answer. Or I'm not."
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "Yes. And the actor who walks in trying to give the right answer is making the audition about themselves. Their worthiness. Their need to be chosen."
+        },
+        {
+          "type": "paren",
+          "text": "the distinction"
+        },
+        {
+          "type": "dialogue",
+          "text": "Never a supplicant."
+        }
+      ]
+    },
+    {
+      "number": "TWO",
+      "title": "Arriving as the Character",
+      "blocks": [
+        {
+          "type": "slug",
+          "text": "INT. CASTING ROOM — CONTINUOUS"
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "The correct order of preparation:"
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "First read. Receive everything. Mark where your breath changes. Not the dramatic moments — where your breath actually changes."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "Then the excavation. The wound, the scar, the want, the secret."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "Then the lines. Last. Because they are the surface. And surface without depth is hollow."
+        }
+      ]
+    },
+    {
+      "number": "THREE",
+      "title": "The Room That Costs Too Much",
+      "blocks": [
+        {
+          "type": "slug",
+          "text": "INT. BROTHER JACK'S WORKSPACE — LATER"
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "Not every audition room is a character search."
+        },
+        {
+          "type": "paren",
+          "text": "a long beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "Some rooms are testing something else. How much you need the role. How far you will go."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "Desperation is the actor's greatest vulnerability. Not lack of talent. Not lack of preparation."
+        },
+        {
+          "type": "paren",
+          "text": "the word"
+        },
+        {
+          "type": "dialogue",
+          "text": "Desperation."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "The prior contract protects you. The agent protects you. And the knowledge of your worth — built from the inside, not given from the outside — protects you."
+        },
+        {
+          "type": "paren",
+          "text": "a long beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "The room that asks you to surrender what the Griot's oath protects — in exchange for a role —"
+        },
+        {
+          "type": "paren",
+          "text": "very quietly"
+        },
+        {
+          "type": "dialogue",
+          "text": "is not a room worth being in."
+        }
+      ]
+    }
+  ],
+  "direct_address": {
+    "intro": "To you.",
+    "blocks": [
+      {
+        "type": "address",
+        "text": "You are not desperate for a role. You are desperate for proof that you are worthy of one. And that proof cannot be given to you from the outside."
+      },
+      {
+        "type": "address",
+        "text": "It was established in the Griot's oath. You carry the truth. The story needs a body. You are willing. That is not nothing. That is everything."
+      }
+    ]
+  },
+  "requirement": {
+    "hashtag": "#JoelhoodP4L4",
+    "prompt": "Post about an audition you walked into as a supplicant — performing for approval rather than arriving as the character. What would you do differently now, with what you know? Include #JoelhoodP4L4."
+  }
+}
