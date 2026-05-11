@@ -1,0 +1,244 @@
+{
+  "id": "P2L4",
+  "phase": 2,
+  "lesson": 4,
+  "title": "Eye Contact",
+  "phase_name": "Phase Two — The Instrument",
+  "epigraph": {
+    "quote": "The eyes are not windows to the soul. They are the soul's performance space. Everything the actor cannot hide lives in the eyes. Everything the actor cannot fake must come from them.",
+    "attribution": "Brother Jack"
+  },
+  "acts": [
+    {
+      "number": "ONE",
+      "title": "What the Eyes Say",
+      "blocks": [
+        {
+          "type": "slug",
+          "text": "INT. LIBRARY — NIGHT"
+        },
+        {
+          "type": "action",
+          "text": "The mirror has moved. It is no longer against the wall. It is propped at an angle. The Apprentice can see herself if she chooses to look. She does not, yet."
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "An audience forgives bad movement. Forgives imperfect diction. Forgives technical errors they can name and identify."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "They do not forgive eyes that are not present."
+        },
+        {
+          "type": "paren",
+          "text": "a long beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "Because the eyes are the one thing the actor cannot fully control with technique."
+        },
+        {
+          "type": "dialogue",
+          "text": "The eyes tell the truth whether the actor intends them to or not."
+        },
+        {
+          "type": "dialogue",
+          "text": "Empty eyes in a technically perfect performance — the audience leaves feeling cheated. Not knowing why."
+        },
+        {
+          "type": "dialogue",
+          "text": "Present eyes in an imperfect performance — the audience stays. Leans in. Forgives everything."
+        }
+      ]
+    },
+    {
+      "number": "TWO",
+      "title": "Three Archetypes",
+      "blocks": [
+        {
+          "type": "slug",
+          "text": "INT. LIBRARY — CONTINUOUS"
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "Three kinds of eyes in a scene."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "The Predator. Eyes that take. That consume what they see. That evaluate, calculate, decide. Power lives here. Also danger."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "The Prey. Eyes that receive. That hold fear without running. That stay open to what is coming even when what is coming is terrible. Vulnerability lives here. Also courage."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "The Ghost. Eyes that are present in the room but not in the scene. That move through the space without landing anywhere. That look without seeing."
+        },
+        {
+          "type": "paren",
+          "text": "a long beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "Most actors, when they are not fully present, become Ghosts."
+        },
+        {
+          "type": "dialogue",
+          "text": "Not because they lack talent."
+        },
+        {
+          "type": "dialogue",
+          "text": "Because they are managing the scene rather than living in it."
+        }
+      ]
+    },
+    {
+      "number": "THREE",
+      "title": "The Mirror Finally Faced",
+      "blocks": [
+        {
+          "type": "slug",
+          "text": "INT. LIBRARY — LATER"
+        },
+        {
+          "type": "action",
+          "text": "Brother Jack gestures at the mirror. She looks at it. At herself."
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "What do you see?"
+        },
+        {
+          "type": "action",
+          "text": "A long silence. She looks. Honestly."
+        },
+        {
+          "type": "character",
+          "text": "THE APPRENTICE"
+        },
+        {
+          "type": "paren",
+          "text": "arriving at something"
+        },
+        {
+          "type": "dialogue",
+          "text": "Someone who is trying to look like they know what they are doing."
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "Yes."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "And underneath that?"
+        },
+        {
+          "type": "action",
+          "text": "A longer silence."
+        },
+        {
+          "type": "character",
+          "text": "THE APPRENTICE"
+        },
+        {
+          "type": "paren",
+          "text": "very quietly"
+        },
+        {
+          "type": "dialogue",
+          "text": "Someone who needs this to matter."
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "paren",
+          "text": "the close of Phase Two"
+        },
+        {
+          "type": "dialogue",
+          "text": "That — is presence."
+        },
+        {
+          "type": "dialogue",
+          "text": "Not the trying. The need."
+        },
+        {
+          "type": "dialogue",
+          "text": "Let the need be in your eyes."
+        },
+        {
+          "type": "dialogue",
+          "text": "Every time. In every scene."
+        },
+        {
+          "type": "dialogue",
+          "text": "And the audience will never look away."
+        },
+        {
+          "type": "action_italic",
+          "text": "He turns the mirror to face the wall again. Phase Two is complete."
+        }
+      ]
+    }
+  ],
+  "direct_address": {
+    "intro": "To the Apprentice who looked.",
+    "blocks": [
+      {
+        "type": "address",
+        "text": "Phase Two is complete. You went to the marrow. You opened the treasure chest. You trained the body. You found what the eyes hold when they are not managed."
+      },
+      {
+        "type": "address",
+        "text": "The instrument is not perfect. It never will be. But it is now available in ways it was not when Phase Two began. That availability is what Phase Three requires."
+      },
+      {
+        "type": "address",
+        "text": "Phase Three is about the text. How to read it. Who is speaking it. How to carry it with everything Phase Two built. Rest. Then begin."
+      }
+    ]
+  },
+  "requirement": {
+    "hashtag": "#JoelhoodP2L4",
+    "prompt": "Post about what you saw when you finally looked. In the mirror. In the exercise. In yourself during Phase Two. Not what you hoped to see. What was actually there. Include #JoelhoodP2L4."
+  }
+}
