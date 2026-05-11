@@ -1,0 +1,260 @@
+{
+  "id": "P2L0",
+  "phase": 2,
+  "lesson": 0,
+  "title": "The Forgotten Script",
+  "phase_name": "Phase Two — The Instrument",
+  "epigraph": {
+    "quote": "Before you can carry anyone else's truth — you must know what you are carrying. The instrument is not your voice or your body. The instrument is you. And you have been shaped by things you have not yet examined.",
+    "attribution": "Brother Jack"
+  },
+  "acts": [
+    {
+      "number": "ONE",
+      "title": "The Library",
+      "blocks": [
+        {
+          "type": "slug",
+          "text": "INT. LIBRARY — NIGHT"
+        },
+        {
+          "type": "action",
+          "text": "A different room. Not the black box. A library. Old. Shelves floor to ceiling. Books that have been read. A table with a candle. Two chairs. A mirror against the wall — turned to face it. Its back to the room."
+        },
+        {
+          "type": "action",
+          "text": "Brother Jack sits at the table. THE APPRENTICE enters. She notices the mirror. Its face to the wall."
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "Phase Two is about the instrument."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "But before we discuss what the instrument can do — we must understand what has been done to it."
+        },
+        {
+          "type": "action",
+          "text": "He gestures at the shelves."
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "Every experience you have had. Every relationship. Every room you have been in and what happened there. Every time you were told who you were — by a parent, a teacher, a failure, a success."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "All of it is written in the instrument."
+        },
+        {
+          "type": "dialogue",
+          "text": "In how you breathe. In what you protect. In what you cannot access without cost."
+        },
+        {
+          "type": "paren",
+          "text": "a long beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "This is the forgotten script."
+        },
+        {
+          "type": "dialogue",
+          "text": "The one written before any playwright gave you lines."
+        }
+      ]
+    },
+    {
+      "number": "TWO",
+      "title": "Four Doors",
+      "blocks": [
+        {
+          "type": "slug",
+          "text": "INT. LIBRARY — CONTINUOUS"
+        },
+        {
+          "type": "action",
+          "text": "He places four cards on the table. Face down. She looks at them."
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "Phase Two will open four doors."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "Authentic emotion. Not performed feeling. The real thing — accessed from the actual experience of your actual life."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "Empathy. Not sympathy. Not imagining what someone else feels. Temporarily becoming them. Which requires you to briefly stop being you."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "Resilience. The capacity to fail in front of an audience and return. Not to pretend the failure did not happen. To survive it honestly and continue."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "Connection. The willingness to be fully seen by another person in a scene. Which is the most frightening thing the craft asks."
+        },
+        {
+          "type": "action",
+          "text": "He turns the cards over. Each one names one of the four."
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "paren",
+          "text": "very quietly"
+        },
+        {
+          "type": "dialogue",
+          "text": "All four require you to know what is behind the doors you have been keeping closed."
+        },
+        {
+          "type": "dialogue",
+          "text": "That is why this lesson comes first."
+        }
+      ]
+    },
+    {
+      "number": "THREE",
+      "title": "The Mirror",
+      "blocks": [
+        {
+          "type": "slug",
+          "text": "INT. LIBRARY — LATER"
+        },
+        {
+          "type": "action",
+          "text": "She has been looking at the mirror facing the wall since she arrived."
+        },
+        {
+          "type": "character",
+          "text": "THE APPRENTICE"
+        },
+        {
+          "type": "dialogue",
+          "text": "Why is the mirror turned away?"
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "Because Phase Two is not about how you look."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "It is about what you are."
+        },
+        {
+          "type": "dialogue",
+          "text": "The mirror will turn when you are ready to see that."
+        },
+        {
+          "type": "dialogue",
+          "text": "Not before."
+        },
+        {
+          "type": "paren",
+          "text": "a long beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "For now — the work is inward."
+        },
+        {
+          "type": "dialogue",
+          "text": "Find the forgotten script."
+        },
+        {
+          "type": "dialogue",
+          "text": "Read it honestly."
+        },
+        {
+          "type": "dialogue",
+          "text": "And bring it to Phase Two."
+        },
+        {
+          "type": "paren",
+          "text": "very quietly"
+        },
+        {
+          "type": "dialogue",
+          "text": "Because the instrument that has not read its own script"
+        },
+        {
+          "type": "dialogue",
+          "text": "cannot carry anyone else's."
+        }
+      ]
+    }
+  ],
+  "direct_address": {
+    "intro": "To you. The instrument.",
+    "blocks": [
+      {
+        "type": "address",
+        "text": "Phase Two begins with this lesson and not the lessons on technique because the technique is secondary to what the technique is built on."
+      },
+      {
+        "type": "address",
+        "text": "You are the instrument. Not your voice. Not your body. You. The whole of you — including the parts you have been managing, protecting, performing around."
+      },
+      {
+        "type": "address",
+        "text": "The work this phase asks is the most difficult in the curriculum. Not because it is technically demanding. Because it is personally demanding. It will ask you to look at what you have been keeping behind closed doors and make it available to the work."
+      },
+      {
+        "type": "address",
+        "text": "Not to perform your wounds. To know them. So they can serve the story rather than sabotage it."
+      }
+    ]
+  },
+  "requirement": {
+    "hashtag": "#JoelhoodP2L0",
+    "prompt": "Post about one door in yourself you have been keeping closed. You do not have to say what is behind it. Just that it exists. And that you know it is there. Include #JoelhoodP2L0."
+  }
+}
