@@ -1,0 +1,216 @@
+{
+  "id": "P3L5",
+  "phase": 3,
+  "lesson": 5,
+  "title": "Punching Lines — Subtext",
+  "phase_name": "Phase Three — The Text",
+  "epigraph": {
+    "quote": "You will be expected to listen — until it costs you something you liked about yourself.",
+    "attribution": "Brother Jack"
+  },
+  "acts": [
+    {
+      "number": "ONE",
+      "title": "The Silence Has Something in It",
+      "blocks": [
+        {
+          "type": "slug",
+          "text": "INT. BLACK BOX THEATRE — NIGHT"
+        },
+        {
+          "type": "action",
+          "text": "The same room. The same scene. The Apprentice came back. She did not need to. But she could not leave."
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "You were filling."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "character",
+          "text": "MALO"
+        },
+        {
+          "type": "dialogue",
+          "text": "He was deciding whether to leave."
+        },
+        {
+          "type": "action",
+          "text": "The Apprentice stiffens. She was in the scene. She did not hear it."
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "You don't trust silence."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "You were managing the room."
+        }
+      ]
+    },
+    {
+      "number": "TWO",
+      "title": "Not Sarah. You.",
+      "blocks": [
+        {
+          "type": "slug",
+          "text": "INT. BLACK BOX THEATRE — CONTINUOUS"
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "You're angry."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "Not Sarah. You."
+        },
+        {
+          "type": "action",
+          "text": "She argues. He waits."
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "You are not going to use his name to protect your mediocrity."
+        },
+        {
+          "type": "paren",
+          "text": "a long beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "Your job is not to be comfortable."
+        },
+        {
+          "type": "paren",
+          "text": "the line"
+        },
+        {
+          "type": "dialogue",
+          "text": "Your job is to listen until you are changed."
+        }
+      ]
+    },
+    {
+      "number": "THREE",
+      "title": "The Choice",
+      "blocks": [
+        {
+          "type": "slug",
+          "text": "INT. BLACK BOX THEATRE — DEEP INTO THE NIGHT"
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "You may leave. Leave with your intelligence intact. Your opinions intact. Your dignity intact."
+        },
+        {
+          "type": "dialogue",
+          "text": "You will work. You will book. You will perform."
+        },
+        {
+          "type": "dialogue",
+          "text": "And you will never be required to listen again."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "Or — you may stay."
+        },
+        {
+          "type": "paren",
+          "text": "a long beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "You will be expected to listen — until it costs you something you liked about yourself."
+        },
+        {
+          "type": "action",
+          "text": "Malo stands. Walks off without looking at her. Unhurried. Complete."
+        },
+        {
+          "type": "action",
+          "text": "She reaches toward the candle. Stops. Lets it burn."
+        },
+        {
+          "type": "character",
+          "text": "THE APPRENTICE"
+        },
+        {
+          "type": "paren",
+          "text": "alone — to herself"
+        },
+        {
+          "type": "dialogue",
+          "text": "I don't know how to do this yet."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "But I can't leave."
+        },
+        {
+          "type": "paren",
+          "text": "a long beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "I heard him deciding whether to leave. In the silence. I heard it."
+        }
+      ]
+    }
+  ],
+  "direct_address": {
+    "intro": "To you.",
+    "blocks": [
+      {
+        "type": "address",
+        "text": "Subtext is not a technique. It is what the other person is carrying that they will not say. Your job is not to perform your version of it. Your job is to hear it. In the silence. In the pause. In the particular quality of a breath before a line that costs them something."
+      },
+      {
+        "type": "address",
+        "text": "Arrive incomplete. Let the work finish you."
+      }
+    ]
+  },
+  "requirement": {
+    "hashtag": "#JoelhoodP3L5",
+    "prompt": "Post about something you heard recently that was not said. In life — not in a scene. The subtext of a real conversation. What was actually happening underneath the words? Include #JoelhoodP3L5."
+  }
+}
