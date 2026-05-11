@@ -1,0 +1,172 @@
+{
+  "id": "P3L4",
+  "phase": 3,
+  "lesson": 4,
+  "title": "Punching Lines — Text",
+  "phase_name": "Phase Three — The Text",
+  "epigraph": {
+    "quote": "You waited to speak. You didn't wait to be moved.",
+    "attribution": "Brother Jack"
+  },
+  "acts": [
+    {
+      "number": "ONE",
+      "title": "The Complete Scene",
+      "blocks": [
+        {
+          "type": "slug",
+          "text": "INT. BLACK BOX THEATRE — NIGHT"
+        },
+        {
+          "type": "action",
+          "text": "MALO KUNJA enters. The Apprentice covers her mouth. Steps toward him."
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "No. There will be time for that after we work."
+        },
+        {
+          "type": "action",
+          "text": "They sit. The scene begins. David and Sarah. Six children versus one. The first full run."
+        },
+        {
+          "type": "action",
+          "text": "The candle holds. The Apprentice exhales with private satisfaction. She thinks she did well."
+        },
+        {
+          "type": "action",
+          "text": "The mirror reflects her — upright, articulate, intact."
+        }
+      ]
+    },
+    {
+      "number": "TWO",
+      "title": "You Waited to Speak",
+      "blocks": [
+        {
+          "type": "slug",
+          "text": "INT. BLACK BOX THEATRE — CONTINUOUS"
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "You waited to speak."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "You didn't wait to be moved."
+        },
+        {
+          "type": "paren",
+          "text": "a long beat"
+        },
+        {
+          "type": "character",
+          "text": "MALO"
+        },
+        {
+          "type": "dialogue",
+          "text": "She doesn't answer me. She answers the page."
+        },
+        {
+          "type": "action",
+          "text": "The sentence lands hard. Not cruelly. That is what makes it worse."
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "Acting is being changed."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "He gives you something. You take it. And it alters you."
+        },
+        {
+          "type": "dialogue",
+          "text": "But you didn't take anything. You protected yourself with the next line."
+        }
+      ]
+    },
+    {
+      "number": "THREE",
+      "title": "Context Is Gravity",
+      "blocks": [
+        {
+          "type": "slug",
+          "text": "INT. BLACK BOX THEATRE — CONTINUOUS"
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "Context is not your imagination. It's the situation you cannot escape."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "In this run — you want him. You want him badly."
+        },
+        {
+          "type": "action",
+          "text": "The same text. Different gravity. Everything changes."
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "Context is not invented."
+        },
+        {
+          "type": "paren",
+          "text": "the two words that close everything"
+        },
+        {
+          "type": "dialogue",
+          "text": "Admitted."
+        }
+      ]
+    }
+  ],
+  "direct_address": {
+    "intro": "To you.",
+    "blocks": [
+      {
+        "type": "address",
+        "text": "Acting is being changed. Not performing change. Actually being altered by what the scene gives you."
+      },
+      {
+        "type": "address",
+        "text": "The context lesson — want versus need — applies to every scene you will ever be in. Know the context before you enter. But do not use it as armour. Let it use you."
+      }
+    ]
+  },
+  "requirement": {
+    "hashtag": "#JoelhoodP3L4",
+    "prompt": "Post about the moment in a scene — real or rehearsed — when you stopped performing and started listening. What changed in the room? In you? Include #JoelhoodP3L4."
+  }
+}
