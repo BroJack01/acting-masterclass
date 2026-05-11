@@ -1,0 +1,172 @@
+{
+  "id": "P3L3",
+  "phase": 3,
+  "lesson": 3,
+  "title": "The Tongue of Kings",
+  "phase_name": "Phase Three — The Text",
+  "epigraph": {
+    "quote": "A sword is only feared if it cuts clean. So is a voice — only revered if it is heard and not doubted.",
+    "attribution": "Brother Jack"
+  },
+  "acts": [
+    {
+      "number": "ONE",
+      "title": "The Music of the Mouth",
+      "blocks": [
+        {
+          "type": "slug",
+          "text": "INT. THEATRE — DAY"
+        },
+        {
+          "type": "action",
+          "text": "A projector. Two clips side by side. Mumbled indie film versus Sean Connery. Bond. James Bond."
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "You don't need Shakespeare diction. You need warrior clarity."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "A mother whispering — 'He's gone' — must pierce like a scream."
+        },
+        {
+          "type": "dialogue",
+          "text": "A boy whispering — 'I'm not afraid' — must shake the heavens."
+        },
+        {
+          "type": "dialogue",
+          "text": "If the words float, we never feel their weight."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "Diction isn't the enemy of truth. It's the sword that carries truth."
+        }
+      ]
+    },
+    {
+      "number": "TWO",
+      "title": "The Echo of the Greats",
+      "blocks": [
+        {
+          "type": "slug",
+          "text": "INT. THEATRE — NIGHT"
+        },
+        {
+          "type": "action",
+          "text": "Morgan Freeman. David Attenborough. James Earl Jones. Alan Rickman. One word. Always. The theatre shivers."
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "He said one word. And the whole world wept."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "Because grief sat in his throat. He never pushed it. He let it haunt him. Then he gave it to us."
+        },
+        {
+          "type": "paren",
+          "text": "a long beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "You are not here to sound like Morgan. Or Attenborough. Or Mufasa."
+        },
+        {
+          "type": "dialogue",
+          "text": "You are here to remember why the earth stopped when they spoke."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "Now speak. But only if your breath has something sacred to carry."
+        }
+      ]
+    },
+    {
+      "number": "THREE",
+      "title": "The Voice as Signature",
+      "blocks": [
+        {
+          "type": "slug",
+          "text": "INT. THEATRE — NIGHT"
+        },
+        {
+          "type": "action",
+          "text": "Total darkness. One candle. The Apprentice barefoot at centre stage. Eyes closed."
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "Sixty seconds. No gestures. No expressions. Let the voice carry it all."
+        },
+        {
+          "type": "dialogue",
+          "text": "Nobility. Urgency. And soul."
+        },
+        {
+          "type": "action",
+          "text": "She speaks. Her voice cracks — then opens."
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "paren",
+          "text": "very quietly"
+        },
+        {
+          "type": "dialogue",
+          "text": "The greats do not speak to be heard."
+        },
+        {
+          "type": "dialogue",
+          "text": "They speak to be etched. Like scripture. Like eulogies. Like a name carved into stone."
+        },
+        {
+          "type": "dialogue",
+          "text": "That — is voice."
+        }
+      ]
+    }
+  ],
+  "direct_address": {
+    "intro": "To you.",
+    "blocks": [
+      {
+        "type": "address",
+        "text": "The voice lesson is not about sounding good. It is about the words arriving with their full weight intact. Practice the four temperatures — rush, float, cut, oath — daily. Notice which one you default to and why."
+      }
+    ]
+  },
+  "requirement": {
+    "hashtag": "#JoelhoodP3L3",
+    "prompt": "Post a 60-second video. Voice only. No face. Carry something real with only your voice. A memory, a truth, a line. Let the voice be the entire instrument. Include #JoelhoodP3L3."
+  }
+}
