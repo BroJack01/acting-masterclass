@@ -1,0 +1,320 @@
+{
+  "id": "P1L3",
+  "phase": 1,
+  "lesson": 3,
+  "title": "Story",
+  "phase_name": "Phase One — The Interior",
+  "epigraph": {
+    "quote": "A story is not what happened. A story is what it meant when it happened. And what it still means. To the person who carries it. To the community that receives it. To the truth that would have died without it.",
+    "attribution": "Brother Jack"
+  },
+  "acts": [
+    {
+      "number": "ONE",
+      "title": "What a Story Is",
+      "blocks": [
+        {
+          "type": "slug",
+          "text": "INT. BLACK BOX THEATRE — NIGHT"
+        },
+        {
+          "type": "action",
+          "text": "Brother Jack sits on the floor. Inside the chalk circle. This is new. He has never been inside it before."
+        },
+        {
+          "type": "action",
+          "text": "THE APPRENTICE sits across from him. Outside the circle. Also new."
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "Tell me a story."
+        },
+        {
+          "type": "character",
+          "text": "THE APPRENTICE"
+        },
+        {
+          "type": "paren",
+          "text": "surprised"
+        },
+        {
+          "type": "dialogue",
+          "text": "What story?"
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "Any story. The first one that comes."
+        },
+        {
+          "type": "action",
+          "text": "She thinks. Something arrives. She begins."
+        },
+        {
+          "type": "action",
+          "text": "She tells it. Simply. Without performance. A thing that happened. To someone she knows. Or to her."
+        },
+        {
+          "type": "action",
+          "text": "When she finishes — Brother Jack is quiet for a long time."
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "Why did you tell that one?"
+        },
+        {
+          "type": "character",
+          "text": "THE APPRENTICE"
+        },
+        {
+          "type": "paren",
+          "text": "honestly"
+        },
+        {
+          "type": "dialogue",
+          "text": "It came first."
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "Things do not come first by accident."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "Something in you chose that story. Before your mind decided. Something that knows what needs to be said."
+        },
+        {
+          "type": "paren",
+          "text": "a long beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "That something — the part of you that chooses the story before the mind interferes —"
+        },
+        {
+          "type": "paren",
+          "text": "the definition arriving"
+        },
+        {
+          "type": "dialogue",
+          "text": "is the actor."
+        }
+      ]
+    },
+    {
+      "number": "TWO",
+      "title": "What a Story Does",
+      "blocks": [
+        {
+          "type": "slug",
+          "text": "INT. BLACK BOX THEATRE — CONTINUOUS"
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "A story does not inform. A story does not educate. A story does not deliver a message."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "A story changes the person who receives it."
+        },
+        {
+          "type": "dialogue",
+          "text": "Not always dramatically. Not always obviously."
+        },
+        {
+          "type": "dialogue",
+          "text": "But something in the listener is different after a true story than before it."
+        },
+        {
+          "type": "dialogue",
+          "text": "A door was opened that was closed. Or a weight was named that had no name. Or a loneliness was recognised as shared."
+        },
+        {
+          "type": "paren",
+          "text": "a long beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "The actor is the delivery system for that change."
+        },
+        {
+          "type": "dialogue",
+          "text": "Not the author of it. Not the architect of it."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "The body through which it moves."
+        },
+        {
+          "type": "dialogue",
+          "text": "From the page to the room."
+        },
+        {
+          "type": "dialogue",
+          "text": "From the author's solitude to the audience's recognition."
+        },
+        {
+          "type": "character",
+          "text": "THE APPRENTICE"
+        },
+        {
+          "type": "dialogue",
+          "text": "And if the story doesn't change anyone?"
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "Then something in the delivery failed."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "Not necessarily in the acting."
+        },
+        {
+          "type": "dialogue",
+          "text": "Sometimes in the writing. Sometimes in the direction. Sometimes in the casting."
+        },
+        {
+          "type": "dialogue",
+          "text": "But sometimes — in the actor who was so busy performing the story that they forgot to carry it."
+        }
+      ]
+    },
+    {
+      "number": "THREE",
+      "title": "Your Story",
+      "blocks": [
+        {
+          "type": "slug",
+          "text": "INT. BLACK BOX THEATRE — LATER"
+        },
+        {
+          "type": "action",
+          "text": "The candle. The circle. The two of them on the floor."
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "There is a story you have been carrying since before you knew what acting was."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "Not a character's story. Yours."
+        },
+        {
+          "type": "dialogue",
+          "text": "The thing you saw. That you could not leave unsaid."
+        },
+        {
+          "type": "dialogue",
+          "text": "That you came to this craft to carry."
+        },
+        {
+          "type": "dialogue",
+          "text": "Even if you cannot name it yet."
+        },
+        {
+          "type": "paren",
+          "text": "a long beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "Phase One is going to help you find it."
+        },
+        {
+          "type": "dialogue",
+          "text": "Not by asking you to perform it."
+        },
+        {
+          "type": "dialogue",
+          "text": "By asking you to know it."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "Because an actor who does not know their own story"
+        },
+        {
+          "type": "dialogue",
+          "text": "cannot carry anyone else's."
+        },
+        {
+          "type": "paren",
+          "text": "very quietly"
+        },
+        {
+          "type": "dialogue",
+          "text": "The marrow is next."
+        }
+      ]
+    }
+  ],
+  "direct_address": {
+    "intro": "To you. Your story.",
+    "blocks": [
+      {
+        "type": "address",
+        "text": "The story you told when Brother Jack asked — that was not random. The part of you that chose it is the part of you that this curriculum is trying to reach."
+      },
+      {
+        "type": "address",
+        "text": "Pay attention to which stories come first. In this training and in life. They are the curriculum's real text. The lessons are the frame. Your stories are the content."
+      },
+      {
+        "type": "address",
+        "text": "And the story you have been carrying since before you knew what acting was — the one underneath all the roles, all the preparation, all the professional identity — find that one. The curriculum will need it."
+      }
+    ]
+  },
+  "requirement": {
+    "hashtag": "#JoelhoodP1L3",
+    "prompt": "Post about the story that first made you feel something you could not explain. The one that stayed. Not a film or a book — a real experience. Include #JoelhoodP1L3."
+  }
+}
