@@ -1,0 +1,212 @@
+{
+  "id": "P4L6",
+  "phase": 4,
+  "lesson": 6,
+  "title": "Keep Working",
+  "phase_name": "Phase Four — The World",
+  "epigraph": {
+    "quote": "The fire moves. The Griot moves with it. Not because there is always an audience. Because the truth does not wait.",
+    "attribution": "Brother Jack"
+  },
+  "acts": [
+    {
+      "number": "ONE",
+      "title": "The Career Is What Happens Between",
+      "blocks": [
+        {
+          "type": "slug",
+          "text": "INT. BROTHER JACK'S WORKSPACE — MORNING"
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "Available."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "That is the most dangerous word in an actor's vocabulary."
+        },
+        {
+          "type": "paren",
+          "text": "a long beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "The career is not the productions. The productions are the visible part. The career — the actual career — is what happens between them."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "How the actor moves through the time when no camera is rolling. When no director has called. When the industry has not yet pointed in their direction."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "That time is not intermission."
+        },
+        {
+          "type": "paren",
+          "text": "the line"
+        },
+        {
+          "type": "dialogue",
+          "text": "It is the career."
+        }
+      ]
+    },
+    {
+      "number": "TWO",
+      "title": "The Circle That Formed",
+      "blocks": [
+        {
+          "type": "slug",
+          "text": "INT. BROTHER JACK'S WORKSPACE — CONTINUOUS"
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "The people who watched the daily video across the full length of this curriculum — who were present for Phase One's fire and Phase Two's silence and Phase Three's text and Phase Four's industry —"
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "were not spectators."
+        },
+        {
+          "type": "paren",
+          "text": "a long beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "They were witnesses. In the circle. Around the fire. Not at the performance."
+        },
+        {
+          "type": "paren",
+          "text": "the word"
+        },
+        {
+          "type": "dialogue",
+          "text": "At the becoming."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "That community is not an audience for your performances."
+        },
+        {
+          "type": "paren",
+          "text": "arriving at it"
+        },
+        {
+          "type": "dialogue",
+          "text": "It is your village. And the Griot who knows their village never works alone."
+        }
+      ]
+    },
+    {
+      "number": "THREE",
+      "title": "Begin",
+      "blocks": [
+        {
+          "type": "slug",
+          "text": "INT. BROTHER JACK'S WORKSPACE — LATER"
+        },
+        {
+          "type": "action",
+          "text": "A blank script cover on the desk. He slides it across to her."
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "There is a truth you carry. Not the character's truth. Yours."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "The work does not require permission. The work requires commitment. And the prior contract already contains that commitment."
+        },
+        {
+          "type": "paren",
+          "text": "a long beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "The Griot did not ask the chief for permission."
+        },
+        {
+          "type": "dialogue",
+          "text": "The community needed the truth."
+        },
+        {
+          "type": "dialogue",
+          "text": "The Griot stood up."
+        },
+        {
+          "type": "paren",
+          "text": "the final words of the curriculum"
+        },
+        {
+          "type": "dialogue",
+          "text": "And began."
+        },
+        {
+          "type": "action",
+          "text": "She takes the blank pages. Holds them."
+        },
+        {
+          "type": "action_italic",
+          "text": "The fire is yours."
+        }
+      ]
+    }
+  ],
+  "direct_address": {
+    "intro": "To you.",
+    "blocks": [
+      {
+        "type": "address",
+        "text": "You have been somewhere. Let me tell you what you have done."
+      },
+      {
+        "type": "address",
+        "text": "You went to the marrow. You built a person. You earned the voice. You entered the scene. You understood the industry. You kept the oath. You built the village."
+      },
+      {
+        "type": "address",
+        "text": "Now — the fire is yours. Stand up. And begin."
+      }
+    ]
+  },
+  "requirement": {
+    "hashtag": "#JoelhoodP4L6",
+    "prompt": "Post your truth. The one from the blank pages. The one you came to acting to carry. Not the polished version. The actual one. Public. Witnessed. The Griot standing up. Include #JoelhoodP4L6."
+  }
+}
