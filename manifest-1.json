@@ -1,0 +1,26 @@
+{
+  "name": "Joelhood Acting Master Class",
+  "short_name": "AMC",
+  "description": "The Joelhood Pictures Acting Master Class — a complete actor formation in four phases.",
+  "start_url": "/acting-masterclass/",
+  "display": "standalone",
+  "background_color": "#111318",
+  "theme_color": "#111318",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education"],
+  "lang": "en"
+}

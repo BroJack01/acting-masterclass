@@ -3,17 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#111318">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="AMC">
 <title>Joelhood Acting Master Class</title>
+<link rel="manifest" href="manifest.json">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
 <style>
-/* ── ROOT ─────────────────────────────────────────────────── */
 :root {
   --bg:          #111318;
   --bg2:         #181c23;
   --bg3:         #1e222b;
-  --surface:     #23283300;
   --border:      #2a2f3a;
   --gold:        #c9a84c;
   --gold-dim:    #8a6d2a;
@@ -25,581 +28,346 @@
   --green:       #3a7d5a;
   --green-dim:   #1e3d2d;
   --red:         #8b3a3a;
+  --orange:      #b8621a;
   --font-script: 'Courier Prime', 'Courier New', monospace;
   --font-body:   'Cormorant Garamond', Georgia, serif;
   --transition:  200ms ease;
 }
-
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
 html { font-size: 16px; scroll-behavior: smooth; }
-
 body {
-  background: var(--bg);
-  color: var(--cream);
-  font-family: var(--font-body);
-  min-height: 100vh;
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
+  background: var(--bg); color: var(--cream);
+  font-family: var(--font-body); min-height: 100vh;
+  line-height: 1.6; -webkit-font-smoothing: antialiased;
 }
 
-/* ── LOADING ──────────────────────────────────────────────── */
+/* ── LOADING ─────────────────────────────────────────────── */
 #loading {
-  position: fixed; inset: 0;
-  background: var(--bg);
+  position: fixed; inset: 0; background: var(--bg);
   display: flex; align-items: center; justify-content: center;
-  flex-direction: column; gap: 20px;
-  z-index: 9999;
+  flex-direction: column; gap: 20px; z-index: 9999;
   transition: opacity 0.6s ease;
 }
 #loading.fade-out { opacity: 0; pointer-events: none; }
 .loading-mark {
-  font-family: var(--font-script);
-  font-size: 11px;
-  letter-spacing: 4px;
-  color: var(--gold);
-  text-transform: uppercase;
+  font-family: var(--font-script); font-size: 11px;
+  letter-spacing: 4px; color: var(--gold); text-transform: uppercase;
   animation: pulse 2s ease-in-out infinite;
 }
-.loading-bar {
-  width: 160px; height: 1px;
-  background: var(--border);
-  position: relative; overflow: hidden;
-}
+.loading-bar { width: 160px; height: 1px; background: var(--border); position: relative; overflow: hidden; }
 .loading-bar::after {
-  content: '';
-  position: absolute; inset-block: 0; left: -100%;
-  width: 100%; background: var(--gold);
-  animation: slide 1.4s ease-in-out infinite;
+  content: ''; position: absolute; inset-block: 0; left: -100%;
+  width: 100%; background: var(--gold); animation: slide 1.4s ease-in-out infinite;
 }
 @keyframes slide { to { left: 100%; } }
 @keyframes pulse { 0%,100%{opacity:.4} 50%{opacity:1} }
 
-/* ── LAYOUT ───────────────────────────────────────────────── */
+/* ── CENTRED SCREEN (auth, recovery, gate, expired) ──────── */
+.centred-screen {
+  min-height: 100vh; display: flex; align-items: center;
+  justify-content: center; padding: 32px 24px;
+}
+.centred-box {
+  max-width: 440px; width: 100%; text-align: center;
+}
+.screen-logo {
+  font-family: var(--font-script); font-size: 10px;
+  letter-spacing: 3px; color: var(--gold);
+  text-transform: uppercase; margin-bottom: 40px; display: block;
+}
+.screen-title {
+  font-family: var(--font-body); font-size: 28px; font-weight: 300;
+  color: var(--white); margin-bottom: 12px; line-height: 1.2;
+}
+.screen-sub {
+  font-family: var(--font-body); font-size: 15px; font-style: italic;
+  color: var(--cream-dim); line-height: 1.7; margin-bottom: 32px;
+}
+.screen-form { display: flex; flex-direction: column; gap: 12px; }
+.screen-input {
+  background: var(--bg2); border: 1px solid var(--border);
+  color: var(--cream); font-family: var(--font-script);
+  font-size: 14px; padding: 14px 16px; border-radius: 2px;
+  outline: none; width: 100%; transition: border-color var(--transition);
+}
+.screen-input:focus { border-color: var(--gold); }
+.screen-input::placeholder { color: var(--muted); }
+.screen-btn {
+  background: var(--gold); color: var(--bg);
+  font-family: var(--font-script); font-size: 11px;
+  letter-spacing: 3px; text-transform: uppercase;
+  padding: 14px 32px; border: none; border-radius: 2px;
+  cursor: pointer; transition: background var(--transition);
+  width: 100%;
+}
+.screen-btn:hover { background: var(--gold-bright); }
+.screen-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+.screen-btn-ghost {
+  background: transparent; border: 1px solid var(--border);
+  color: var(--cream-dim); font-family: var(--font-script);
+  font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+  padding: 10px 20px; border-radius: 2px; cursor: pointer;
+  transition: all var(--transition); margin-top: 8px;
+}
+.screen-btn-ghost:hover { border-color: var(--gold); color: var(--gold); }
+.screen-feedback {
+  font-family: var(--font-script); font-size: 12px;
+  padding: 10px 14px; border-radius: 2px; display: none; text-align: left;
+}
+.screen-feedback.error   { background: rgba(139,58,58,.2); border: 1px solid var(--red); color: #e08080; display: block; }
+.screen-feedback.success { background: var(--green-dim); border: 1px solid var(--green); color: #7ec89a; display: block; }
+.screen-contact {
+  font-family: var(--font-script); font-size: 10px;
+  color: var(--muted); margin-top: 32px; line-height: 1.8;
+}
+
+/* ── LAYOUT ──────────────────────────────────────────────── */
 #app { display: none; min-height: 100vh; }
 #app.visible { display: flex; flex-direction: column; }
-
 header {
   position: sticky; top: 0; z-index: 100;
-  background: var(--bg);
-  border-bottom: 1px solid var(--border);
-  padding: 0 24px;
+  background: var(--bg); border-bottom: 1px solid var(--border); padding: 0 24px;
 }
 .header-inner {
   max-width: 900px; margin: 0 auto;
-  display: flex; align-items: center;
-  justify-content: space-between;
-  height: 56px;
+  display: flex; align-items: center; justify-content: space-between; height: 56px;
 }
-.logo {
-  font-family: var(--font-script);
-  font-size: 10px; letter-spacing: 3px;
-  color: var(--gold); text-transform: uppercase;
-}
-.student-name {
-  font-family: var(--font-body);
-  font-size: 13px; color: var(--cream-dim);
-  font-style: italic;
-}
+.logo { font-family: var(--font-script); font-size: 10px; letter-spacing: 3px; color: var(--gold); text-transform: uppercase; }
+.student-name { font-family: var(--font-body); font-size: 13px; color: var(--cream-dim); font-style: italic; }
 
-/* ── PHASE PROGRESS ───────────────────────────────────────── */
-.progress-bar {
-  border-bottom: 1px solid var(--border);
-  padding: 12px 24px;
-  background: var(--bg2);
+/* ── DEADLINE BANNER ─────────────────────────────────────── */
+.deadline-banner {
+  padding: 10px 24px; text-align: center;
+  font-family: var(--font-script); font-size: 11px; letter-spacing: 1px;
+  display: none;
 }
-.progress-inner {
-  max-width: 900px; margin: 0 auto;
-  display: flex; align-items: center; gap: 8px;
-}
-.phase-dot {
-  display: flex; align-items: center; gap: 6px;
-}
+.deadline-banner.warning { background: rgba(184,98,26,.2); border-bottom: 1px solid var(--orange); color: #e8a070; display: block; }
+.deadline-banner.urgent  { background: rgba(139,58,58,.25); border-bottom: 1px solid var(--red); color: #e08080; display: block; }
+
+/* ── PROGRESS BAR ────────────────────────────────────────── */
+.progress-bar { border-bottom: 1px solid var(--border); padding: 12px 24px; background: var(--bg2); }
+.progress-inner { max-width: 900px; margin: 0 auto; display: flex; align-items: center; gap: 8px; }
+.phase-dot { display: flex; align-items: center; gap: 6px; }
 .phase-dot-circle {
   width: 8px; height: 8px; border-radius: 50%;
-  border: 1px solid var(--muted);
-  background: transparent;
-  transition: var(--transition);
-  flex-shrink: 0;
+  border: 1px solid var(--muted); background: transparent;
+  transition: var(--transition); flex-shrink: 0;
 }
-.phase-dot-circle.active {
-  background: var(--gold);
-  border-color: var(--gold);
-  box-shadow: 0 0 8px rgba(201,168,76,0.4);
-}
-.phase-dot-circle.complete {
-  background: var(--green);
-  border-color: var(--green);
-}
-.phase-dot-label {
-  font-family: var(--font-script);
-  font-size: 9px; letter-spacing: 1.5px;
-  color: var(--muted); text-transform: uppercase;
-  white-space: nowrap;
-}
-.phase-dot.active .phase-dot-label { color: var(--gold); }
+.phase-dot-circle.active  { background: var(--gold); border-color: var(--gold); box-shadow: 0 0 8px rgba(201,168,76,.4); }
+.phase-dot-circle.complete { background: var(--green); border-color: var(--green); }
+.phase-dot-label { font-family: var(--font-script); font-size: 9px; letter-spacing: 1.5px; color: var(--muted); text-transform: uppercase; white-space: nowrap; }
+.phase-dot.active .phase-dot-label   { color: var(--gold); }
 .phase-dot.complete .phase-dot-label { color: var(--green); }
-
-.phase-divider {
-  flex: 1; height: 1px;
-  background: var(--border);
-}
-
-/* Lesson segments within active phase */
-.lesson-segments {
-  display: flex; gap: 3px; align-items: center;
-}
-.lesson-seg {
-  width: 16px; height: 3px;
-  background: var(--border); border-radius: 2px;
-  transition: var(--transition);
-}
-.lesson-seg.done { background: var(--green); }
+.phase-divider { flex: 1; height: 1px; background: var(--border); }
+.lesson-segments { display: flex; gap: 3px; align-items: center; }
+.lesson-seg { width: 16px; height: 3px; background: var(--border); border-radius: 2px; transition: var(--transition); }
+.lesson-seg.done    { background: var(--green); }
 .lesson-seg.current { background: var(--gold); }
 
-/* ── MAIN CONTENT ─────────────────────────────────────────── */
-main {
-  flex: 1;
-  max-width: 900px; margin: 0 auto;
-  width: 100%; padding: 48px 24px 120px;
-}
+/* ── MAIN ────────────────────────────────────────────────── */
+main { flex: 1; max-width: 900px; margin: 0 auto; width: 100%; padding: 48px 24px 120px; }
 
-/* ── LESSON HEADER ────────────────────────────────────────── */
-.lesson-header {
-  margin-bottom: 48px;
-  padding-bottom: 32px;
-  border-bottom: 1px solid var(--border);
-}
-.lesson-phase-label {
-  font-family: var(--font-script);
-  font-size: 10px; letter-spacing: 3px;
-  color: var(--gold); text-transform: uppercase;
-  margin-bottom: 12px;
-}
-.lesson-title {
-  font-family: var(--font-body);
-  font-size: clamp(28px, 5vw, 42px);
-  font-weight: 300;
-  color: var(--white);
-  line-height: 1.2;
-  margin-bottom: 24px;
-}
-.epigraph {
-  border-left: 2px solid var(--gold-dim);
-  padding: 16px 24px;
-  margin-top: 24px;
-}
-.epigraph-quote {
-  font-family: var(--font-body);
-  font-size: 15px; font-style: italic;
-  color: var(--cream-dim); line-height: 1.7;
-  margin-bottom: 8px;
-}
-.epigraph-attr {
-  font-family: var(--font-script);
-  font-size: 10px; letter-spacing: 2px;
-  color: var(--gold-dim); text-transform: uppercase;
-}
+/* ── LESSON HEADER ───────────────────────────────────────── */
+.lesson-header { margin-bottom: 48px; padding-bottom: 32px; border-bottom: 1px solid var(--border); }
+.lesson-phase-label { font-family: var(--font-script); font-size: 10px; letter-spacing: 3px; color: var(--gold); text-transform: uppercase; margin-bottom: 12px; }
+.lesson-title { font-family: var(--font-body); font-size: clamp(28px,5vw,42px); font-weight: 300; color: var(--white); line-height: 1.2; margin-bottom: 24px; }
+.epigraph { border-left: 2px solid var(--gold-dim); padding: 16px 24px; margin-top: 24px; }
+.epigraph-quote { font-family: var(--font-body); font-size: 15px; font-style: italic; color: var(--cream-dim); line-height: 1.7; margin-bottom: 8px; }
+.epigraph-attr  { font-family: var(--font-script); font-size: 10px; letter-spacing: 2px; color: var(--gold-dim); text-transform: uppercase; }
 
-/* ── ACT HEADER ───────────────────────────────────────────── */
-.act-header {
-  margin: 48px 0 32px;
-  display: flex; align-items: center; gap: 16px;
-}
-.act-number {
-  font-family: var(--font-script);
-  font-size: 9px; letter-spacing: 3px;
-  color: var(--gold); text-transform: uppercase;
-  white-space: nowrap;
-}
-.act-title-text {
-  font-family: var(--font-script);
-  font-size: 10px; letter-spacing: 2px;
-  color: var(--cream-dim); text-transform: uppercase;
-}
-.act-rule {
-  flex: 1; height: 1px; background: var(--border);
-}
+/* ── ACT HEADER ──────────────────────────────────────────── */
+.act-header { margin: 48px 0 32px; display: flex; align-items: center; gap: 16px; }
+.act-number { font-family: var(--font-script); font-size: 9px; letter-spacing: 3px; color: var(--gold); text-transform: uppercase; white-space: nowrap; }
+.act-title-text { font-family: var(--font-script); font-size: 10px; letter-spacing: 2px; color: var(--cream-dim); text-transform: uppercase; }
+.act-rule { flex: 1; height: 1px; background: var(--border); }
 
-/* ── SCREENPLAY BLOCKS ────────────────────────────────────── */
+/* ── SCREENPLAY BLOCKS ───────────────────────────────────── */
 .screenplay { font-family: var(--font-script); line-height: 1.8; }
+.block-slug         { display: block; font-size: 13px; font-weight: 700; color: var(--cream); letter-spacing: .5px; margin: 24px 0 12px; text-transform: uppercase; }
+.block-action       { display: block; font-size: 14px; color: var(--cream-dim); margin: 8px 0; max-width: 580px; }
+.block-action_italic{ display: block; font-size: 14px; color: var(--cream-dim); font-style: italic; margin: 8px 0; max-width: 580px; }
+.block-character    { display: block; font-size: 13px; font-weight: 700; color: var(--cream); letter-spacing: .5px; text-transform: uppercase; margin: 20px auto 0; text-align: center; max-width: 420px; }
+.block-character_vo { display: block; font-size: 13px; font-weight: 700; color: var(--cream); letter-spacing: .5px; text-transform: uppercase; margin: 20px auto 0; text-align: center; max-width: 420px; }
+.block-character_vo::after { content: ' (V.O.)'; font-weight: 400; }
+.block-paren        { display: block; font-size: 13px; color: var(--muted); font-style: italic; text-align: center; max-width: 420px; margin: 0 auto; }
+.block-dialogue     { display: block; font-size: 14px; color: var(--cream); max-width: 420px; margin: 0 auto; text-align: center; padding: 0 16px; }
+.block-address      { display: block; font-family: var(--font-body); font-size: 15px; font-style: italic; color: var(--cream-dim); line-height: 1.8; margin-bottom: 16px; padding-left: 24px; border-left: 1px solid var(--border); }
 
-.block-slug {
-  display: block;
-  font-size: 13px; font-weight: 700;
-  color: var(--cream); letter-spacing: 0.5px;
-  margin: 24px 0 12px;
-  text-transform: uppercase;
-}
-
-.block-action {
-  display: block;
-  font-size: 14px; color: var(--cream-dim);
-  margin: 8px 0; max-width: 580px;
-}
-
-.block-action-italic {
-  display: block;
-  font-size: 14px; color: var(--cream-dim);
-  font-style: italic; margin: 8px 0;
-  max-width: 580px;
-}
-
-.block-character {
-  display: block;
-  font-size: 13px; font-weight: 700;
-  color: var(--cream); letter-spacing: 0.5px;
-  text-transform: uppercase;
-  margin: 20px auto 0;
-  text-align: center;
-  max-width: 420px;
-}
-
-.block-character-vo {
-  display: block;
-  font-size: 13px; font-weight: 700;
-  color: var(--cream); letter-spacing: 0.5px;
-  text-transform: uppercase;
-  margin: 20px auto 0;
-  text-align: center;
-  max-width: 420px;
-}
-.block-character-vo::after { content: ' (V.O.)'; font-weight: 400; }
-
-.block-paren {
-  display: block;
-  font-size: 13px; color: var(--muted);
-  font-style: italic;
-  text-align: center; max-width: 420px;
-  margin: 0 auto;
-}
-
-.block-dialogue {
-  display: block;
-  font-size: 14px; color: var(--cream);
-  max-width: 420px; margin: 0 auto;
-  text-align: center;
-  padding: 0 16px;
-}
-
-/* ── DIRECT ADDRESS ───────────────────────────────────────── */
+/* ── DIRECT ADDRESS ──────────────────────────────────────── */
 .direct-address-section {
-  margin: 64px 0 48px;
-  padding: 40px;
-  border: 1px solid var(--border);
-  background: var(--bg2);
-  position: relative;
+  margin: 64px 0 48px; padding: 40px;
+  border: 1px solid var(--border); background: var(--bg2); position: relative;
 }
 .direct-address-section::before {
-  content: 'BROTHER JACK — DIRECT ADDRESS';
-  position: absolute; top: -1px; left: 40px;
-  background: var(--bg);
-  padding: 0 12px;
-  font-family: var(--font-script);
-  font-size: 9px; letter-spacing: 3px;
+  content: attr(data-label); position: absolute; top: -1px; left: 40px;
+  background: var(--bg); padding: 0 12px;
+  font-family: var(--font-script); font-size: 9px; letter-spacing: 3px;
   color: var(--gold); text-transform: uppercase;
 }
-.da-intro {
-  font-family: var(--font-body);
-  font-size: 13px; font-style: italic;
-  color: var(--muted); margin-bottom: 24px;
-}
-.block-address {
-  display: block;
-  font-family: var(--font-body);
-  font-size: 15px; font-style: italic;
-  color: var(--cream-dim); line-height: 1.8;
-  margin-bottom: 16px;
-  padding-left: 24px;
-  border-left: 1px solid var(--border);
-}
+.da-intro { font-family: var(--font-body); font-size: 13px; font-style: italic; color: var(--muted); margin-bottom: 24px; }
 
-/* ── REQUIREMENT SECTION ──────────────────────────────────── */
+/* ── EXTENSION BUTTON ────────────────────────────────────── */
+.extension-panel {
+  margin: 0 0 32px; padding: 20px 24px;
+  border: 1px solid var(--orange); background: rgba(184,98,26,.1);
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  flex-wrap: wrap;
+}
+.extension-text { font-family: var(--font-script); font-size: 12px; color: #e8a070; line-height: 1.6; }
+.extension-btn {
+  background: var(--orange); color: var(--white);
+  font-family: var(--font-script); font-size: 10px; letter-spacing: 2px;
+  text-transform: uppercase; padding: 10px 20px; border: none;
+  border-radius: 2px; cursor: pointer; white-space: nowrap;
+  transition: opacity var(--transition); flex-shrink: 0;
+}
+.extension-btn:hover   { opacity: .85; }
+.extension-btn:disabled{ opacity: .4; cursor: not-allowed; }
+
+/* ── REQUIREMENT ─────────────────────────────────────────── */
 .requirement-section {
-  margin-top: 64px;
-  padding: 40px;
-  border: 1px solid var(--gold-dim);
-  background: var(--bg2);
-  position: relative;
+  margin-top: 64px; padding: 40px;
+  border: 1px solid var(--gold-dim); background: var(--bg2); position: relative;
 }
 .requirement-section::before {
-  content: 'LESSON REQUIREMENT';
-  position: absolute; top: -1px; left: 40px;
-  background: var(--bg);
-  padding: 0 12px;
-  font-family: var(--font-script);
-  font-size: 9px; letter-spacing: 3px;
+  content: 'LESSON REQUIREMENT'; position: absolute; top: -1px; left: 40px;
+  background: var(--bg); padding: 0 12px;
+  font-family: var(--font-script); font-size: 9px; letter-spacing: 3px;
   color: var(--gold); text-transform: uppercase;
 }
-.req-hashtag {
-  font-family: var(--font-script);
-  font-size: 18px; color: var(--gold);
-  margin-bottom: 16px; font-weight: 700;
-}
-.req-prompt {
-  font-family: var(--font-body);
-  font-size: 16px; color: var(--cream);
-  line-height: 1.7; margin-bottom: 32px;
-}
-
-/* Form */
+.req-hashtag { font-family: var(--font-script); font-size: 18px; color: var(--gold); margin-bottom: 16px; font-weight: 700; }
+.req-prompt  { font-family: var(--font-body); font-size: 16px; color: var(--cream); line-height: 1.7; margin-bottom: 32px; }
 .req-form { display: flex; flex-direction: column; gap: 16px; }
 .form-group { display: flex; flex-direction: column; gap: 6px; }
-.form-label {
-  font-family: var(--font-script);
-  font-size: 10px; letter-spacing: 2px;
-  color: var(--muted); text-transform: uppercase;
-}
+.form-label { font-family: var(--font-script); font-size: 10px; letter-spacing: 2px; color: var(--muted); text-transform: uppercase; }
 .form-input {
-  background: var(--bg3);
-  border: 1px solid var(--border);
-  color: var(--cream);
-  font-family: var(--font-script);
-  font-size: 14px; padding: 12px 16px;
-  border-radius: 2px;
-  transition: border-color var(--transition);
-  outline: none;
+  background: var(--bg3); border: 1px solid var(--border); color: var(--cream);
+  font-family: var(--font-script); font-size: 14px; padding: 12px 16px;
+  border-radius: 2px; transition: border-color var(--transition); outline: none;
 }
 .form-input:focus { border-color: var(--gold); }
 .form-input::placeholder { color: var(--muted); }
-
 .submit-btn {
-  align-self: flex-start;
-  background: var(--gold);
-  color: var(--bg);
-  font-family: var(--font-script);
-  font-size: 11px; letter-spacing: 3px;
-  text-transform: uppercase;
-  padding: 14px 32px;
-  border: none; border-radius: 2px;
-  cursor: pointer;
-  transition: background var(--transition), transform var(--transition);
-  margin-top: 8px;
+  align-self: flex-start; background: var(--gold); color: var(--bg);
+  font-family: var(--font-script); font-size: 11px; letter-spacing: 3px;
+  text-transform: uppercase; padding: 14px 32px; border: none;
+  border-radius: 2px; cursor: pointer; transition: background var(--transition), transform var(--transition); margin-top: 8px;
 }
-.submit-btn:hover { background: var(--gold-bright); transform: translateY(-1px); }
-.submit-btn:active { transform: translateY(0); }
-.submit-btn:disabled { opacity: 0.4; cursor: not-allowed; transform: none; }
-
-.req-feedback {
-  font-family: var(--font-script);
-  font-size: 13px; padding: 12px 16px;
-  border-radius: 2px; display: none;
-}
-.req-feedback.success {
-  background: var(--green-dim);
-  border: 1px solid var(--green);
-  color: #7ec89a; display: block;
-}
-.req-feedback.error {
-  background: rgba(139,58,58,0.2);
-  border: 1px solid var(--red);
-  color: #e08080; display: block;
-}
-
-/* Already complete */
-.req-complete {
-  display: flex; align-items: center; gap: 12px;
-  padding: 16px 0;
-}
-.req-complete-mark {
-  width: 24px; height: 24px; border-radius: 50%;
-  background: var(--green);
-  display: flex; align-items: center; justify-content: center;
-  font-size: 12px; color: white; flex-shrink: 0;
-}
-.req-complete-text {
-  font-family: var(--font-script);
-  font-size: 13px; color: var(--cream-dim);
-}
-
-/* ── PHASE GATE ───────────────────────────────────────────── */
-#phase-gate {
-  max-width: 600px; margin: 80px auto;
-  text-align: center; padding: 0 24px;
-}
-.gate-icon {
-  font-size: 40px; margin-bottom: 24px; display: block;
-  filter: grayscale(0.3);
-}
-.gate-title {
-  font-family: var(--font-body);
-  font-size: 32px; font-weight: 300;
-  color: var(--white); margin-bottom: 16px;
-}
-.gate-sub {
-  font-family: var(--font-body);
-  font-size: 16px; font-style: italic;
-  color: var(--cream-dim); line-height: 1.7;
-  margin-bottom: 40px;
-}
-.gate-price {
-  font-family: var(--font-script);
-  font-size: 13px; letter-spacing: 2px;
-  color: var(--gold); text-transform: uppercase;
-  margin-bottom: 8px;
-}
-.gate-amount {
-  font-family: var(--font-body);
-  font-size: 48px; font-weight: 600;
-  color: var(--white); line-height: 1;
-  margin-bottom: 4px;
-}
-.gate-currency {
-  font-family: var(--font-script);
-  font-size: 12px; color: var(--muted);
-  margin-bottom: 40px;
-}
-.gate-instructions {
-  font-family: var(--font-body);
-  font-size: 15px; color: var(--cream-dim);
-  line-height: 1.8; text-align: left;
-  background: var(--bg2);
-  border: 1px solid var(--border);
-  padding: 24px 28px; margin-bottom: 32px;
-}
-.gate-instructions strong {
-  color: var(--gold); font-weight: 600;
-}
-
-/* ── CURRICULUM COMPLETE ──────────────────────────────────── */
-#curriculum-complete {
-  max-width: 600px; margin: 80px auto;
-  text-align: center; padding: 0 24px;
-}
-.complete-title {
-  font-family: var(--font-body);
-  font-size: 36px; font-weight: 300;
-  color: var(--white); margin-bottom: 24px;
-  line-height: 1.2;
-}
-.complete-closes {
-  font-family: var(--font-body);
-  font-size: 15px; font-style: italic;
-  color: var(--cream-dim); line-height: 2.2;
-  margin-bottom: 40px;
-}
-.complete-final {
-  font-family: var(--font-script);
-  font-size: 11px; letter-spacing: 3px;
-  color: var(--gold); text-transform: uppercase;
-  line-height: 2;
-}
-
-/* ── ERROR STATE ──────────────────────────────────────────── */
-#error-state {
-  max-width: 480px; margin: 120px auto;
-  text-align: center; padding: 0 24px;
-}
-.error-title {
-  font-family: var(--font-body);
-  font-size: 24px; font-weight: 300;
-  color: var(--cream); margin-bottom: 12px;
-}
-.error-msg {
-  font-family: var(--font-script);
-  font-size: 13px; color: var(--muted);
-  margin-bottom: 32px;
-}
-
-/* ── NEXT LESSON PANEL ────────────────────────────────────── */
-.next-lesson-panel {
-  margin-top: 48px; padding: 32px;
-  border: 1px solid var(--border);
-  background: var(--bg2);
-  display: none;
-}
+.submit-btn:hover    { background: var(--gold-bright); transform: translateY(-1px); }
+.submit-btn:active   { transform: translateY(0); }
+.submit-btn:disabled { opacity: .4; cursor: not-allowed; transform: none; }
+.req-feedback { font-family: var(--font-script); font-size: 13px; padding: 12px 16px; border-radius: 2px; display: none; }
+.req-feedback.success { background: var(--green-dim); border: 1px solid var(--green); color: #7ec89a; display: block; }
+.req-feedback.error   { background: rgba(139,58,58,.2); border: 1px solid var(--red); color: #e08080; display: block; }
+.req-complete { display: flex; align-items: center; gap: 12px; padding: 16px 0; }
+.req-complete-mark { width: 24px; height: 24px; border-radius: 50%; background: var(--green); display: flex; align-items: center; justify-content: center; font-size: 12px; color: white; flex-shrink: 0; }
+.req-complete-text { font-family: var(--font-script); font-size: 13px; color: var(--cream-dim); }
+.next-lesson-panel { margin-top: 32px; padding: 28px; border: 1px solid var(--border); background: var(--bg2); display: none; }
 .next-lesson-panel.visible { display: block; }
-.next-label {
-  font-family: var(--font-script);
-  font-size: 9px; letter-spacing: 3px;
-  color: var(--gold); text-transform: uppercase;
-  margin-bottom: 12px;
-}
-.next-title {
-  font-family: var(--font-body);
-  font-size: 20px; font-weight: 300;
-  color: var(--white); margin-bottom: 20px;
-}
-.next-btn {
-  display: inline-block;
-  background: transparent;
-  border: 1px solid var(--gold);
-  color: var(--gold);
-  font-family: var(--font-script);
-  font-size: 11px; letter-spacing: 3px;
-  text-transform: uppercase;
-  padding: 12px 28px;
-  cursor: pointer;
-  transition: all var(--transition);
-  text-decoration: none;
-}
-.next-btn:hover {
-  background: var(--gold); color: var(--bg);
-}
+.next-label { font-family: var(--font-script); font-size: 9px; letter-spacing: 3px; color: var(--gold); text-transform: uppercase; margin-bottom: 12px; }
+.next-title { font-family: var(--font-body); font-size: 20px; font-weight: 300; color: var(--white); margin-bottom: 20px; }
+.next-btn { display: inline-block; background: transparent; border: 1px solid var(--gold); color: var(--gold); font-family: var(--font-script); font-size: 11px; letter-spacing: 3px; text-transform: uppercase; padding: 12px 28px; cursor: pointer; transition: all var(--transition); }
+.next-btn:hover { background: var(--gold); color: var(--bg); }
 
-/* ── FADE IN ──────────────────────────────────────────────── */
-.fade-in {
-  animation: fadeIn 0.5s ease forwards;
+/* ── GATE / EXPIRED / COMPLETE SCREENS ───────────────────── */
+.full-screen-panel { max-width: 600px; margin: 80px auto; text-align: center; padding: 0 24px; }
+.panel-icon   { font-size: 40px; margin-bottom: 24px; display: block; }
+.panel-title  { font-family: var(--font-body); font-size: 32px; font-weight: 300; color: var(--white); margin-bottom: 16px; }
+.panel-sub    { font-family: var(--font-body); font-size: 16px; font-style: italic; color: var(--cream-dim); line-height: 1.7; margin-bottom: 32px; }
+.panel-price-label { font-family: var(--font-script); font-size: 13px; letter-spacing: 2px; color: var(--gold); text-transform: uppercase; margin-bottom: 4px; }
+.panel-amount { font-family: var(--font-body); font-size: 48px; font-weight: 600; color: var(--white); line-height: 1; }
+.panel-currency { font-family: var(--font-script); font-size: 12px; color: var(--muted); margin-bottom: 32px; }
+.panel-instructions {
+  font-family: var(--font-body); font-size: 15px; color: var(--cream-dim);
+  line-height: 1.8; text-align: left; background: var(--bg2);
+  border: 1px solid var(--border); padding: 24px 28px; margin-bottom: 24px;
 }
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(8px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
+.panel-instructions strong { color: var(--gold); font-weight: 600; }
+.complete-closes { font-family: var(--font-body); font-size: 15px; font-style: italic; color: var(--cream-dim); line-height: 2.4; margin-bottom: 40px; }
+.complete-final  { font-family: var(--font-script); font-size: 11px; letter-spacing: 3px; color: var(--gold); text-transform: uppercase; line-height: 2; }
 
-/* ── SCROLLBAR ────────────────────────────────────────────── */
+.fade-in { animation: fadeIn .5s ease forwards; }
+@keyframes fadeIn { from{opacity:0;transform:translateY(8px)} to{opacity:1;transform:translateY(0)} }
 ::-webkit-scrollbar { width: 4px; }
 ::-webkit-scrollbar-track { background: var(--bg); }
 ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
 
-/* ── RESPONSIVE ───────────────────────────────────────────── */
 @media (max-width: 640px) {
   main { padding: 32px 16px 80px; }
-  .direct-address-section,
-  .requirement-section { padding: 28px 20px; }
-  .block-character, .block-character-vo,
-  .block-paren, .block-dialogue { max-width: 100%; }
+  .direct-address-section, .requirement-section { padding: 28px 20px; }
+  .block-character, .block-character_vo, .block-paren, .block-dialogue { max-width: 100%; }
   .submit-btn { width: 100%; text-align: center; }
   .progress-inner { gap: 4px; }
   .phase-dot-label { display: none; }
+  .extension-panel { flex-direction: column; }
 }
 </style>
 </head>
 <body>
 
-<!-- LOADING -->
 <div id="loading">
   <div class="loading-mark">Joelhood Pictures</div>
   <div class="loading-bar"></div>
 </div>
 
-<!-- APP -->
-<div id="app">
+<!-- AUTH SCREEN — email verification on return visits -->
+<div id="auth-screen" style="display:none;">
+  <div class="centred-screen">
+    <div class="centred-box">
+      <span class="screen-logo">Joelhood · Acting Master Class</span>
+      <h1 class="screen-title">Welcome back.</h1>
+      <p class="screen-sub">Enter your email address to continue your lesson.</p>
+      <div class="screen-form">
+        <input type="email" class="screen-input" id="auth-email" placeholder="your@email.com" autocomplete="email">
+        <div class="screen-feedback" id="auth-feedback"></div>
+        <button class="screen-btn" id="auth-btn" onclick="submitAuth()">Continue</button>
+        <button class="screen-btn-ghost" onclick="showRecovery()">Use a different account</button>
+      </div>
+      <p class="screen-contact">joelhoodpictures@gmail.com · +260977858275</p>
+    </div>
+  </div>
+</div>
 
+<!-- RECOVERY SCREEN — no token found -->
+<div id="recovery-screen" style="display:none;">
+  <div class="centred-screen">
+    <div class="centred-box">
+      <span class="screen-logo">Joelhood · Acting Master Class</span>
+      <h1 class="screen-title">Find your lesson.</h1>
+      <p class="screen-sub">Enter the email address you used to enrol. We will send your lesson link.</p>
+      <div class="screen-form">
+        <input type="email" class="screen-input" id="recovery-email" placeholder="your@email.com" autocomplete="email">
+        <div class="screen-feedback" id="recovery-feedback"></div>
+        <button class="screen-btn" id="recovery-btn" onclick="submitRecovery()">Send My Lesson Link</button>
+      </div>
+      <p class="screen-contact">Not enrolled yet? Contact us.<br>joelhoodpictures@gmail.com · +260977858275</p>
+    </div>
+  </div>
+</div>
+
+<!-- MAIN APP -->
+<div id="app">
   <header>
     <div class="header-inner">
-      <div class="logo">Joelhood · Acting Master Class</div>
+      <div class="logo">Joelhood · AMC</div>
       <div class="student-name" id="student-name-display"></div>
     </div>
   </header>
-
-  <!-- Phase progress -->
+  <div class="deadline-banner" id="deadline-banner"></div>
   <div class="progress-bar" id="progress-bar" style="display:none;">
     <div class="progress-inner" id="progress-inner"></div>
   </div>
-
-  <!-- Main content area -->
   <main id="main-content"></main>
-
 </div>
 
 <script>
 // ── CONFIG ────────────────────────────────────────────────────
-const API      = 'https://acting-masterclass.joelhoodpictures.workers.dev';
-const LESSONS_BASE = './lessons'; // relative path in GitHub Pages repo
+const API          = 'https://acting-masterclass.joelhoodpictures.workers.dev';
+const LESSONS_BASE = './lessons';
+const TOKEN_KEY    = 'jhl_amc_token';
 
-// Phase metadata
 const PHASES = {
-  0: { name: 'Orientation',          lessons: [0] },
+  0: { name: 'Orientation',               lessons: [0] },
   1: { name: 'Phase One — The Interior',   lessons: [1,2,3,4,5] },
   2: { name: 'Phase Two — The Instrument', lessons: [0,1,2,3,4] },
   3: { name: 'Phase Three — The Text',     lessons: [1,2,3,4,5] },
@@ -608,77 +376,210 @@ const PHASES = {
 
 const PHASE_PRICES = { 1:299, 2:399, 3:399, 4:499 };
 
-// ── STATE ─────────────────────────────────────────────────────
 let STATE = {
-  token: null,
-  student: null,
-  lessonData: null,
-  currentPhase: 0,
+  token:       null,
+  student:     null,
+  lessonData:  null,
+  currentPhase:  0,
   currentLesson: 0,
+  fromUrl:     false,
 };
 
 // ── INIT ──────────────────────────────────────────────────────
 async function init() {
-  const params = new URLSearchParams(window.location.search);
-  STATE.token  = params.get('token') || '';
+  // Register service worker
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./sw.js').catch(() => {});
+  }
 
-  if (!STATE.token) {
-    showError('No access token found.', 'Please use the link from your email.');
+  const params      = new URLSearchParams(window.location.search);
+  const urlToken    = params.get('token') || '';
+  const storedToken = localStorage.getItem(TOKEN_KEY) || '';
+  const reqPhase    = params.get('phase');
+  const reqLesson   = params.get('lesson');
+
+  if (urlToken) {
+    // Came from email link — trust the token, store it
+    STATE.token   = urlToken;
+    STATE.fromUrl = true;
+    localStorage.setItem(TOKEN_KEY, urlToken);
+    // Clean URL without exposing token in browser history
+    window.history.replaceState({}, '', window.location.pathname);
+    await loadWithToken(STATE.token, reqPhase, reqLesson);
+
+  } else if (storedToken) {
+    // Return visit — require email verification
+    STATE.token = storedToken;
     hideLoading();
+    showAuthScreen();
+
+  } else {
+    // No token anywhere — recovery
+    hideLoading();
+    showRecoveryScreen();
+  }
+}
+
+// ── TOKEN LOAD ────────────────────────────────────────────────
+async function loadWithToken(token, reqPhase, reqLesson) {
+  try {
+    const progress = await api('/progress', { token });
+    if (!progress.ok) {
+      showError('Access denied.', progress.error || 'Your link may be invalid or expired.');
+      hideLoading();
+      return;
+    }
+    await loadApp(progress, token, reqPhase, reqLesson);
+  } catch (err) {
+    showError('Could not connect.', 'Please check your connection and try again.');
+    hideLoading();
+  }
+}
+
+async function loadApp(progress, token, reqPhase, reqLesson) {
+  STATE.student      = progress;
+  STATE.token        = token;
+  STATE.currentPhase  = Number(reqPhase  !== null && reqPhase  !== undefined ? reqPhase  : progress.currentPhase);
+  STATE.currentLesson = Number(reqLesson !== null && reqLesson !== undefined ? reqLesson : progress.currentLesson);
+
+  document.getElementById('student-name-display').textContent = progress.name || '';
+
+  // Sequence enforcement — ensure all previous lessons in phase are done
+  STATE.currentLesson = enforceSequence(STATE.currentPhase, STATE.currentLesson, progress.lessonsDone);
+
+  // Check phase access
+  const paidKey   = `p${STATE.currentPhase}Paid`;
+  const expiredKey= `p${STATE.currentPhase}Expired`;
+  const hasAccess = STATE.currentPhase === 0 || progress[paidKey] === true;
+  const isExpired = progress[expiredKey] === true;
+
+  if (isExpired) {
+    renderExpired(STATE.currentPhase);
+    hideLoading();
+    showApp();
     return;
   }
 
-  try {
-    const progress = await api('/progress', { token: STATE.token });
-    if (!progress.ok) {
-      showError('Access denied.', progress.error || 'Your link may be invalid.');
-      hideLoading();
-      return;
-    }
-
-    STATE.student = progress;
-    STATE.currentPhase  = Number(progress.currentPhase);
-    STATE.currentLesson = Number(progress.currentLesson);
-
-    document.getElementById('student-name-display').textContent =
-      progress.name || '';
-
-    // Check if this is a specific lesson request
-    const reqPhase  = params.get('phase');
-    const reqLesson = params.get('lesson');
-    if (reqPhase !== null && reqLesson !== null) {
-      STATE.currentPhase  = Number(reqPhase);
-      STATE.currentLesson = Number(reqLesson);
-    }
-
-    // Check phase access
-    const paidKey = `p${STATE.currentPhase}Paid`;
-    const hasAccess = STATE.currentPhase === 0 || progress[paidKey] === true;
-
-    if (!hasAccess) {
-      renderPhaseGate(STATE.currentPhase);
-      hideLoading();
-      showApp();
-      return;
-    }
-
-    // Load lesson
-    await loadLesson(STATE.currentPhase, STATE.currentLesson);
+  if (!hasAccess) {
+    renderPhaseGate(STATE.currentPhase);
     hideLoading();
     showApp();
+    return;
+  }
 
-  } catch (err) {
-    showError('Could not load your lesson.', err.message);
-    hideLoading();
+  // Deadline banner
+  renderDeadlineBanner(progress, STATE.currentPhase);
+
+  await loadLesson(STATE.currentPhase, STATE.currentLesson);
+  hideLoading();
+  showApp();
+}
+
+// ── SEQUENCE ENFORCEMENT ──────────────────────────────────────
+function enforceSequence(phase, requestedLesson, lessonsStr) {
+  const done    = parseDone(lessonsStr);
+  const lessons = PHASES[phase] ? PHASES[phase].lessons : [];
+  for (const l of lessons) {
+    if (!done.has(`P${phase}L${l}`)) return l;
+  }
+  return requestedLesson;
+}
+
+// ── AUTH SCREEN ───────────────────────────────────────────────
+function showAuthScreen() {
+  document.getElementById('auth-screen').style.display = 'block';
+}
+
+async function submitAuth() {
+  const emailInput = document.getElementById('auth-email');
+  const btn        = document.getElementById('auth-btn');
+  const feedback   = document.getElementById('auth-feedback');
+  const email      = emailInput.value.trim().toLowerCase();
+
+  if (!email) { showFb(feedback, 'error', 'Please enter your email.'); return; }
+
+  btn.disabled    = true;
+  btn.textContent = 'Verifying...';
+  feedback.className = 'screen-feedback';
+
+  try {
+    const result = await apiPost('/verify', { email });
+    if (result.ok) {
+      document.getElementById('auth-screen').style.display = 'none';
+      showLoading();
+      await loadApp(result, STATE.token, null, null);
+    } else {
+      showFb(feedback, 'error', result.error || 'Email does not match. Try again.');
+      btn.disabled    = false;
+      btn.textContent = 'Continue';
+    }
+  } catch {
+    showFb(feedback, 'error', 'Connection error. Please try again.');
+    btn.disabled    = false;
+    btn.textContent = 'Continue';
+  }
+}
+
+// ── RECOVERY SCREEN ───────────────────────────────────────────
+function showRecovery() {
+  document.getElementById('auth-screen').style.display = 'none';
+  showRecoveryScreen();
+}
+
+function showRecoveryScreen() {
+  document.getElementById('recovery-screen').style.display = 'block';
+}
+
+async function submitRecovery() {
+  const emailInput = document.getElementById('recovery-email');
+  const btn        = document.getElementById('recovery-btn');
+  const feedback   = document.getElementById('recovery-feedback');
+  const email      = emailInput.value.trim().toLowerCase();
+
+  if (!email) { showFb(feedback, 'error', 'Please enter your email.'); return; }
+
+  btn.disabled    = true;
+  btn.textContent = 'Sending...';
+  feedback.className = 'screen-feedback';
+
+  try {
+    const result = await apiPost('/resend', { email });
+    if (result.ok) {
+      showFb(feedback, 'success', 'Lesson link sent. Check your email — including spam folder.');
+      btn.textContent = 'Sent';
+    } else {
+      showFb(feedback, 'error', result.error || 'Email not found. Please check and try again.');
+      btn.disabled    = false;
+      btn.textContent = 'Send My Lesson Link';
+    }
+  } catch {
+    showFb(feedback, 'error', 'Connection error. Please try again.');
+    btn.disabled    = false;
+    btn.textContent = 'Send My Lesson Link';
+  }
+}
+
+// ── DEADLINE BANNER ───────────────────────────────────────────
+function renderDeadlineBanner(progress, phase) {
+  if (phase === 0) return;
+  const daysLeft = progress[`p${phase}DaysLeft`];
+  const banner   = document.getElementById('deadline-banner');
+  if (daysLeft === null || daysLeft === undefined) return;
+  if (daysLeft <= 0) return;
+
+  if (daysLeft <= 3) {
+    banner.className   = 'deadline-banner urgent';
+    banner.textContent = `Your phase access expires in ${daysLeft} day${daysLeft === 1 ? '' : 's'}. Complete your lessons now.`;
+  } else if (daysLeft <= 7) {
+    banner.className   = 'deadline-banner warning';
+    banner.textContent = `${daysLeft} days remaining in this phase.`;
   }
 }
 
 // ── API ───────────────────────────────────────────────────────
 async function api(path, params = {}) {
   const url = new URL(API + path);
-  for (const [k,v] of Object.entries(params)) {
-    url.searchParams.set(k, v);
-  }
+  for (const [k,v] of Object.entries(params)) url.searchParams.set(k, v);
   const res = await fetch(url.toString(), {
     headers: { 'X-Token': STATE.token || '' }
   });
@@ -687,12 +588,9 @@ async function api(path, params = {}) {
 
 async function apiPost(path, body = {}) {
   const res = await fetch(API + path, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'X-Token': STATE.token || '',
-    },
-    body: JSON.stringify(body),
+    method:  'POST',
+    headers: { 'Content-Type': 'application/json', 'X-Token': STATE.token || '' },
+    body:    JSON.stringify(body),
   });
   return res.json();
 }
@@ -700,8 +598,7 @@ async function apiPost(path, body = {}) {
 // ── LESSON LOADER ─────────────────────────────────────────────
 async function loadLesson(phase, lesson) {
   const id  = `P${phase}L${lesson}`;
-  const url = `${LESSONS_BASE}/${id}.json`;
-  const res = await fetch(url);
+  const res = await fetch(`${LESSONS_BASE}/${id}.json`);
   if (!res.ok) throw new Error(`Lesson ${id} not found.`);
   STATE.lessonData = await res.json();
   renderLesson(STATE.lessonData);
@@ -710,56 +607,36 @@ async function loadLesson(phase, lesson) {
 
 // ── PROGRESS BAR ──────────────────────────────────────────────
 function renderProgress() {
-  const bar  = document.getElementById('progress-bar');
+  const bar   = document.getElementById('progress-bar');
   const inner = document.getElementById('progress-inner');
   bar.style.display = 'block';
-  inner.innerHTML = '';
-
-  const done = parseDone(STATE.student.lessonsDone);
+  inner.innerHTML   = '';
+  const done  = parseDone(STATE.student.lessonsDone);
 
   Object.entries(PHASES).forEach(([ph, cfg], idx) => {
-    const phNum = Number(ph);
+    const phNum      = Number(ph);
     const isActive   = phNum === STATE.currentPhase;
     const isComplete = cfg.lessons.every(l => done.has(`P${ph}L${l}`));
 
-    // Divider between phases
-    if (idx > 0) {
-      const div = document.createElement('div');
-      div.className = 'phase-divider';
-      inner.appendChild(div);
-    }
+    if (idx > 0) { const d = document.createElement('div'); d.className = 'phase-divider'; inner.appendChild(d); }
 
-    const dot = document.createElement('div');
-    dot.className = 'phase-dot' +
-      (isActive ? ' active' : '') +
-      (isComplete ? ' complete' : '');
-
-    const circle = document.createElement('div');
-    circle.className = 'phase-dot-circle' +
-      (isActive ? ' active' : '') +
-      (isComplete ? ' complete' : '');
-
-    const label = document.createElement('div');
-    label.className = 'phase-dot-label';
-    label.textContent = ph === '0' ? 'Intro' : `P${ph}`;
+    const dot    = el('div', 'phase-dot' + (isActive ? ' active' : '') + (isComplete ? ' complete' : ''));
+    const circle = el('div', 'phase-dot-circle' + (isActive ? ' active' : '') + (isComplete ? ' complete' : ''));
+    const label  = el('div', 'phase-dot-label', ph === '0' ? 'Intro' : `P${ph}`);
 
     dot.appendChild(circle);
     dot.appendChild(label);
 
-    // If active phase — show lesson segments
     if (isActive) {
-      const segs = document.createElement('div');
-      segs.className = 'lesson-segments';
+      const segs = el('div', 'lesson-segments');
       cfg.lessons.forEach(l => {
-        const seg = document.createElement('div');
-        seg.className = 'lesson-seg' +
+        const seg = el('div', 'lesson-seg' +
           (l === STATE.currentLesson ? ' current' : '') +
-          (done.has(`P${ph}L${l}`) ? ' done' : '');
+          (done.has(`P${ph}L${l}`) ? ' done' : ''));
         segs.appendChild(seg);
       });
       dot.appendChild(segs);
     }
-
     inner.appendChild(dot);
   });
 }
@@ -774,67 +651,53 @@ function renderLesson(data) {
   const main = document.getElementById('main-content');
   main.innerHTML = '';
 
-  // Header
   const hdr = el('div', 'lesson-header fade-in');
   hdr.appendChild(el('div', 'lesson-phase-label', data.phase_name));
   hdr.appendChild(el('div', 'lesson-title', data.title));
-
   if (data.epigraph) {
     const epi = el('div', 'epigraph');
     epi.appendChild(el('div', 'epigraph-quote', `"${data.epigraph.quote}"`));
-    epi.appendChild(el('div', 'epigraph-attr', `— ${data.epigraph.attribution}`));
+    epi.appendChild(el('div', 'epigraph-attr',  `— ${data.epigraph.attribution}`));
     hdr.appendChild(epi);
   }
   main.appendChild(hdr);
 
-  // Acts
   const screenplay = el('div', 'screenplay fade-in');
   (data.acts || []).forEach(act => {
     const ah = el('div', 'act-header');
-    ah.appendChild(el('div', 'act-number', `Act ${act.number}`));
+    ah.appendChild(el('div', 'act-number',     `Act ${act.number}`));
     ah.appendChild(el('div', 'act-rule'));
     ah.appendChild(el('div', 'act-title-text', act.title));
     screenplay.appendChild(ah);
-
-    (act.blocks || []).forEach(block => {
-      screenplay.appendChild(renderBlock(block));
-    });
+    (act.blocks || []).forEach(b => screenplay.appendChild(renderBlock(b)));
   });
   main.appendChild(screenplay);
 
-  // Direct address
   if (data.direct_address) {
     const da = el('div', 'direct-address-section fade-in');
+    da.setAttribute('data-label', 'BROTHER JACK — DIRECT ADDRESS');
     da.appendChild(el('div', 'da-intro', data.direct_address.intro));
-    (data.direct_address.blocks || []).forEach(block => {
-      da.appendChild(renderBlock(block));
-    });
+    (data.direct_address.blocks || []).forEach(b => da.appendChild(renderBlock(b)));
     main.appendChild(da);
   }
 
-  // Pondering (if present)
   if (data.pondering) {
-    const pSection = el('div', 'direct-address-section fade-in');
-    pSection.style.setProperty('--before-content', '"THE PONDERING"');
-    pSection.setAttribute('data-label', 'THE PONDERING');
-    const style = document.createElement('style');
-    style.textContent = `[data-label="THE PONDERING"]::before { content: "THE PONDERING"; }`;
-    pSection.appendChild(style);
-    if (data.pondering.slug) {
-      pSection.appendChild(renderBlock({ type: 'slug', text: data.pondering.slug }));
-    }
-    (data.pondering.blocks || []).forEach(block => {
-      pSection.appendChild(renderBlock(block));
-    });
-    main.appendChild(pSection);
+    const ps = el('div', 'direct-address-section fade-in');
+    ps.setAttribute('data-label', 'THE PONDERING');
+    if (data.pondering.slug) ps.appendChild(renderBlock({ type: 'slug', text: data.pondering.slug }));
+    (data.pondering.blocks || []).forEach(b => ps.appendChild(renderBlock(b)));
+    main.appendChild(ps);
   }
 
-  // Requirement
+  // Extension button if approaching deadline
+  maybeRenderExtension(main, data.phase);
+
   renderRequirement(data, main);
 }
 
 function renderBlock(block) {
-  const d = el('div', `block-${block.type}`);
+  const typeClass = `block-${block.type.replace(/ /g, '_')}`;
+  const d = el('div', typeClass);
   d.textContent = block.text || '';
   return d;
 }
@@ -846,176 +709,175 @@ function el(tag, className = '', text = '') {
   return e;
 }
 
+// ── EXTENSION PANEL ───────────────────────────────────────────
+function maybeRenderExtension(parent, phase) {
+  if (!STATE.student || phase === 0) return;
+  const daysLeft  = STATE.student[`p${phase}DaysLeft`];
+  const extUsed   = STATE.student[`p${phase}ExtUsed`];
+  const isExpired = STATE.student[`p${phase}Expired`];
+  if (isExpired || extUsed || daysLeft === null || daysLeft > 5) return;
+
+  const panel = el('div', 'extension-panel fade-in');
+  const text  = el('div', 'extension-text',
+    `Your access to this phase expires in ${daysLeft} day${daysLeft === 1 ? '' : 's'}.\nYou have one extension available — 7 additional days.`);
+  const btn = document.createElement('button');
+  btn.className   = 'extension-btn';
+  btn.textContent = 'Use My Extension';
+  btn.onclick     = () => useExtension(phase, btn, panel);
+  panel.appendChild(text);
+  panel.appendChild(btn);
+  parent.appendChild(panel);
+}
+
+async function useExtension(phase, btn, panel) {
+  btn.disabled    = true;
+  btn.textContent = 'Applying...';
+  try {
+    const result = await apiPost('/extend', { phase });
+    if (result.ok) {
+      panel.innerHTML = '';
+      const msg = el('div', 'extension-text', `✓ Extension applied. New deadline: ${result.newDeadline}`);
+      panel.appendChild(msg);
+      // Update local state
+      if (STATE.student) {
+        STATE.student[`p${phase}ExtUsed`]  = true;
+        STATE.student[`p${phase}Deadline`] = result.newDeadline;
+        STATE.student[`p${phase}DaysLeft`] = 7;
+        renderDeadlineBanner(STATE.student, phase);
+      }
+    } else {
+      btn.disabled    = false;
+      btn.textContent = 'Use My Extension';
+      alert(result.error || 'Extension failed. Please try again.');
+    }
+  } catch {
+    btn.disabled    = false;
+    btn.textContent = 'Use My Extension';
+    alert('Connection error. Please try again.');
+  }
+}
+
 // ── REQUIREMENT ───────────────────────────────────────────────
 function renderRequirement(data, parent) {
-  const req = data.requirement;
-  if (!req) return;
-
-  const done = parseDone(STATE.student.lessonsDone);
+  if (!data.requirement) return;
+  const req  = data.requirement;
+  const done = parseDone(STATE.student ? STATE.student.lessonsDone : '');
   const id   = `P${data.phase}L${data.lesson}`;
   const isComplete = done.has(id);
 
   const section = el('div', 'requirement-section fade-in');
-
   section.appendChild(el('div', 'req-hashtag', req.hashtag));
-  section.appendChild(el('div', 'req-prompt', req.prompt));
+  section.appendChild(el('div', 'req-prompt',  req.prompt));
 
   if (isComplete) {
     const comp = el('div', 'req-complete');
-    const mark = el('div', 'req-complete-mark', '✓');
-    const txt  = el('div', 'req-complete-text', 'Requirement submitted. Lesson complete.');
-    comp.appendChild(mark);
-    comp.appendChild(txt);
+    comp.appendChild(el('div', 'req-complete-mark', '✓'));
+    comp.appendChild(el('div', 'req-complete-text', 'Requirement submitted. Lesson complete.'));
     section.appendChild(comp);
-
-    // Show next lesson button
-    const nextPanel = buildNextPanel(data);
-    if (nextPanel) section.appendChild(nextPanel);
-
+    const next = buildNextPanel(data);
+    if (next) section.appendChild(next);
   } else {
-    // Form
     const form = el('div', 'req-form');
 
     const urlGroup = el('div', 'form-group');
-    urlGroup.appendChild(el('label', 'form-label', 'Post URL — Link to your published post'));
+    urlGroup.appendChild(el('label', 'form-label', 'Post URL — link to your published post'));
     const urlInput = document.createElement('input');
-    urlInput.className = 'form-input';
-    urlInput.type = 'url';
-    urlInput.placeholder = 'https://instagram.com/p/...';
-    urlInput.id = 'req-url';
+    urlInput.className   = 'form-input'; urlInput.type = 'url';
+    urlInput.placeholder = 'https://instagram.com/p/...'; urlInput.id = 'req-url';
     urlGroup.appendChild(urlInput);
     form.appendChild(urlGroup);
 
     const tagGroup = el('div', 'form-group');
-    tagGroup.appendChild(el('label', 'form-label', `Hashtag — Type the exact hashtag from your post`));
+    tagGroup.appendChild(el('label', 'form-label', `Hashtag — type exactly as posted`));
     const tagInput = document.createElement('input');
-    tagInput.className = 'form-input';
-    tagInput.type = 'text';
-    tagInput.placeholder = req.hashtag;
-    tagInput.id = 'req-hashtag';
+    tagInput.className   = 'form-input'; tagInput.type = 'text';
+    tagInput.placeholder = req.hashtag; tagInput.id = 'req-hashtag';
     tagGroup.appendChild(tagInput);
     form.appendChild(tagGroup);
 
-    const feedback = el('div', 'req-feedback');
-    feedback.id = 'req-feedback';
+    const feedback = el('div', 'req-feedback'); feedback.id = 'req-feedback';
     form.appendChild(feedback);
 
     const btn = document.createElement('button');
-    btn.className = 'submit-btn';
+    btn.className   = 'submit-btn';
     btn.textContent = 'Submit Requirement';
-    btn.onclick = () => submitRequirement(data, urlInput, tagInput, btn, feedback);
+    btn.onclick     = () => submitRequirement(data, urlInput, tagInput, btn, feedback);
     form.appendChild(btn);
-
     section.appendChild(form);
   }
-
   parent.appendChild(section);
 }
 
 async function submitRequirement(data, urlInput, tagInput, btn, feedback) {
   const postUrl = urlInput.value.trim();
   const hashtag = tagInput.value.trim();
-  const expected = data.requirement.hashtag.toLowerCase();
-
   feedback.className = 'req-feedback';
-  feedback.style.display = 'none';
 
   if (!postUrl || !postUrl.startsWith('http')) {
-    showFeedback(feedback, 'error', 'Please enter a valid post URL starting with http.');
-    return;
+    showFb(feedback, 'error', 'Please enter a valid post URL starting with http.'); return;
   }
   if (!hashtag) {
-    showFeedback(feedback, 'error', 'Please enter the hashtag from your post.');
-    return;
+    showFb(feedback, 'error', 'Please enter the hashtag from your post.'); return;
   }
 
-  btn.disabled = true;
-  btn.textContent = 'Verifying...';
+  btn.disabled = true; btn.textContent = 'Verifying...';
 
   try {
     const result = await apiPost('/submit', {
-      phase:   data.phase,
-      lesson:  data.lesson,
-      postUrl,
-      hashtag,
+      phase: data.phase, lesson: data.lesson, postUrl, hashtag,
     });
 
     if (result.ok) {
-      showFeedback(feedback, 'success', '✓ Requirement verified. Well done.');
+      showFb(feedback, 'success', '✓ Requirement verified. Well done.');
       btn.style.display = 'none';
-      urlInput.disabled = true;
-      tagInput.disabled = true;
+      urlInput.disabled = true; tagInput.disabled = true;
 
-      // Update local done state
-      const id = `P${data.phase}L${data.lesson}`;
+      const id  = `P${data.phase}L${data.lesson}`;
       const curr = STATE.student.lessonsDone || '';
       STATE.student.lessonsDone = curr ? `${curr},${id}` : id;
 
-      if (result.curriculumComplete) {
-        setTimeout(() => renderCurriculumComplete(), 1500);
-        return;
-      }
+      if (result.curriculumComplete) { setTimeout(() => renderCurriculumComplete(), 1500); return; }
+      if (result.phaseComplete)      { setTimeout(() => renderPhaseGate(data.phase + 1), 1500); return; }
 
-      if (result.phaseComplete) {
-        setTimeout(() => renderPhaseGate(data.phase + 1), 1500);
-        return;
-      }
-
-      // Show next lesson
       if (result.nextLesson !== null && result.nextLesson !== undefined) {
         setTimeout(() => {
-          const nextPanel = buildNextPanel(data);
-          if (nextPanel) {
-            const section = document.querySelector('.requirement-section');
-            if (section) section.appendChild(nextPanel);
-            nextPanel.classList.add('visible');
+          const next = buildNextPanel(data);
+          if (next) {
+            const sec = document.querySelector('.requirement-section');
+            if (sec) { sec.appendChild(next); next.classList.add('visible'); }
           }
         }, 800);
       }
-
     } else {
-      showFeedback(feedback, 'error', result.error || 'Submission failed. Check your post URL and hashtag.');
-      btn.disabled = false;
-      btn.textContent = 'Submit Requirement';
+      showFb(feedback, 'error', result.error || 'Submission failed. Check your URL and hashtag.');
+      btn.disabled = false; btn.textContent = 'Submit Requirement';
     }
-  } catch (err) {
-    showFeedback(feedback, 'error', 'Network error. Please try again.');
-    btn.disabled = false;
-    btn.textContent = 'Submit Requirement';
+  } catch {
+    showFb(feedback, 'error', 'Connection error. Please try again.');
+    btn.disabled = false; btn.textContent = 'Submit Requirement';
   }
 }
 
-function showFeedback(el, type, msg) {
-  el.className = `req-feedback ${type}`;
+function showFb(el, type, msg) {
+  el.className = `${el.className.split(' ')[0]} ${type}`;
   el.textContent = msg;
-  el.style.display = 'block';
 }
 
 function buildNextPanel(data) {
-  const phase  = data.phase;
-  const lesson = data.lesson;
-  const phaseCfg = PHASES[phase];
-  if (!phaseCfg) return null;
-
-  const lessons = phaseCfg.lessons;
-  const idx     = lessons.indexOf(Number(lesson));
+  const lessons = PHASES[data.phase] ? PHASES[data.phase].lessons : [];
+  const idx     = lessons.indexOf(Number(data.lesson));
   if (idx < 0 || idx >= lessons.length - 1) return null;
-
   const nextLesson = lessons[idx + 1];
-  const nextId     = `P${phase}L${nextLesson}`;
 
   const panel = el('div', 'next-lesson-panel');
   panel.appendChild(el('div', 'next-label', 'Next Lesson'));
   panel.appendChild(el('div', 'next-title', `Lesson ${nextLesson}`));
-
   const btn = document.createElement('button');
-  btn.className = 'next-btn';
-  btn.textContent = 'Continue →';
+  btn.className = 'next-btn'; btn.textContent = 'Continue →';
   btn.onclick = async () => {
     STATE.currentLesson = nextLesson;
-    const main = document.getElementById('main-content');
-    main.innerHTML = '';
-    await loadLesson(phase, nextLesson);
+    document.getElementById('main-content').innerHTML = '';
+    await loadLesson(data.phase, nextLesson);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
   panel.appendChild(btn);
@@ -1024,104 +886,111 @@ function buildNextPanel(data) {
 
 // ── PHASE GATE ────────────────────────────────────────────────
 function renderPhaseGate(nextPhaseNum) {
-  const main = document.getElementById('main-content');
+  const main   = document.getElementById('main-content');
   main.innerHTML = '';
-
   const price  = PHASE_PRICES[nextPhaseNum] || 0;
   const pName  = PHASES[nextPhaseNum] ? PHASES[nextPhaseNum].name : `Phase ${nextPhaseNum}`;
-  const prevName = PHASES[nextPhaseNum - 1] ? PHASES[nextPhaseNum - 1].name : '';
+  const prev   = PHASES[nextPhaseNum - 1] ? PHASES[nextPhaseNum - 1].name : '';
 
-  const gate = el('div', '');
-  gate.id = 'phase-gate';
+  const div = el('div', 'full-screen-panel fade-in');
+  div.appendChild(el('span', 'panel-icon', '🔥'));
+  div.appendChild(el('div',  'panel-title', prev ? `${prev} complete.` : 'Phase complete.'));
+  div.appendChild(el('div',  'panel-sub',   `${pName} is waiting.\nPayment is required to continue.`));
+  div.appendChild(el('div',  'panel-price-label', 'Investment'));
+  div.appendChild(el('div',  'panel-amount',  price.toLocaleString()));
+  div.appendChild(el('div',  'panel-currency','Zambian Kwacha (ZMW)'));
 
-  gate.appendChild(el('span', 'gate-icon', '🔥'));
-  gate.appendChild(el('div', 'gate-title', prevName ? `${prevName} complete.` : 'Phase complete.'));
-  gate.appendChild(el('div', 'gate-sub',
-    `You have reached the gate. ${pName} is waiting.\nPayment is required to continue.`
-  ));
-
-  gate.appendChild(el('div', 'gate-price', 'Investment'));
-  gate.appendChild(el('div', 'gate-amount', price.toLocaleString()));
-  gate.appendChild(el('div', 'gate-currency', 'Zambian Kwacha (ZMW)'));
-
-  const instructions = el('div', 'gate-instructions');
-  instructions.innerHTML = `
+  const instr = el('div', 'panel-instructions');
+  instr.innerHTML = `
     <strong>How to unlock ${pName}:</strong><br><br>
     1. Send <strong>K${price.toLocaleString()} ZMW</strong> via MoMo to Joelhood Pictures.<br>
     2. Use your name as the payment reference.<br>
     3. Once your payment is confirmed, your next phase will unlock automatically and you will receive an email.<br><br>
     <strong>Contact:</strong> joelhoodpictures@gmail.com · +260977858275
   `;
-  gate.appendChild(instructions);
+  div.appendChild(instr);
+  main.appendChild(div);
+}
 
-  main.appendChild(gate);
+// ── EXPIRED SCREEN ────────────────────────────────────────────
+function renderExpired(phaseNum) {
+  const main  = document.getElementById('main-content');
+  main.innerHTML = '';
+  const price = PHASE_PRICES[phaseNum] || 0;
+  const pName = PHASES[phaseNum] ? PHASES[phaseNum].name : `Phase ${phaseNum}`;
+
+  const div = el('div', 'full-screen-panel fade-in');
+  div.appendChild(el('span', 'panel-icon', '⏳'));
+  div.appendChild(el('div',  'panel-title', 'Access expired.'));
+  div.appendChild(el('div',  'panel-sub',
+    `Your access to ${pName} has expired. To restart this phase, payment is required.`));
+  div.appendChild(el('div',  'panel-price-label', 'Restart Fee'));
+  div.appendChild(el('div',  'panel-amount',  price.toLocaleString()));
+  div.appendChild(el('div',  'panel-currency','Zambian Kwacha (ZMW)'));
+
+  const instr = el('div', 'panel-instructions');
+  instr.innerHTML = `
+    <strong>To restart ${pName}:</strong><br><br>
+    1. Send <strong>K${price.toLocaleString()} ZMW</strong> via MoMo to Joelhood Pictures.<br>
+    2. Use your name as the payment reference.<br>
+    3. Once confirmed, your phase access will be restored from the beginning.<br><br>
+    <strong>Contact:</strong> joelhoodpictures@gmail.com · +260977858275
+  `;
+  div.appendChild(instr);
+  main.appendChild(div);
 }
 
 // ── CURRICULUM COMPLETE ───────────────────────────────────────
 function renderCurriculumComplete() {
   const main = document.getElementById('main-content');
   main.innerHTML = '';
-
-  const div = el('div', 'fade-in');
-  div.id = 'curriculum-complete';
-
-  div.appendChild(el('div', 'complete-title', 'The fire is yours.'));
-
+  const div = el('div', 'full-screen-panel fade-in');
+  div.appendChild(el('div', 'panel-title', 'The fire is yours.'));
   const closes = el('div', 'complete-closes');
-  closes.innerHTML = `
-    To the Apprentice who stayed.<br>
-    To the Apprentice who looked.<br>
-    To the Apprentice who stayed in the silence.<br>
-    <strong>To the Apprentice who began.</strong>
-  `;
+  closes.innerHTML = `To the Apprentice who stayed.<br>To the Apprentice who looked.<br>To the Apprentice who stayed in the silence.<br><strong>To the Apprentice who began.</strong>`;
   div.appendChild(closes);
-
   const final = el('div', 'complete-final');
-  final.innerHTML = `
-    Stand up.<br>
-    And begin.
-  `;
+  final.innerHTML = `Stand up.<br>And begin.`;
   div.appendChild(final);
-
   main.appendChild(div);
 }
 
-// ── ERROR STATE ───────────────────────────────────────────────
+// ── ERROR ─────────────────────────────────────────────────────
 function showError(title, msg) {
-  const app  = document.getElementById('app');
+  hideLoading();
+  document.getElementById('app').classList.add('visible');
   const main = document.getElementById('main-content');
-  app.classList.add('visible');
-
-  const err = el('div', 'fade-in');
-  err.id = 'error-state';
-  err.style.margin = '120px auto';
-  err.style.textAlign = 'center';
-  err.style.padding = '0 24px';
-  err.style.maxWidth = '480px';
-
-  err.appendChild(el('div', 'error-title', title));
-  err.appendChild(el('div', 'error-msg', msg));
-
-  const contact = el('div', '');
-  contact.style.cssText = 'font-family:var(--font-script);font-size:12px;color:var(--muted);';
-  contact.textContent = 'Contact: joelhoodpictures@gmail.com';
-  err.appendChild(contact);
-
-  main.appendChild(err);
+  main.innerHTML = '';
+  const div = el('div', 'full-screen-panel fade-in');
+  div.appendChild(el('div', 'panel-title', title));
+  div.appendChild(el('div', 'panel-sub', msg));
+  const contact = el('p', 'screen-contact', 'joelhoodpictures@gmail.com · +260977858275');
+  div.appendChild(contact);
+  main.appendChild(div);
 }
 
 // ── SHOW/HIDE ─────────────────────────────────────────────────
 function hideLoading() {
-  const loading = document.getElementById('loading');
-  loading.classList.add('fade-out');
-  setTimeout(() => loading.style.display = 'none', 600);
+  const l = document.getElementById('loading');
+  l.classList.add('fade-out');
+  setTimeout(() => l.style.display = 'none', 600);
 }
-
+function showLoading() {
+  const l = document.getElementById('loading');
+  l.style.display = 'flex'; l.classList.remove('fade-out');
+}
 function showApp() {
   document.getElementById('app').classList.add('visible');
 }
 
-// ── RUN ───────────────────────────────────────────────────────
+// ── KEYBOARD SUPPORT ──────────────────────────────────────────
+document.addEventListener('keydown', e => {
+  if (e.key === 'Enter') {
+    if (document.getElementById('auth-screen').style.display !== 'none') submitAuth();
+    if (document.getElementById('recovery-screen').style.display !== 'none') submitRecovery();
+  }
+});
+
 init();
 </script>
 </body>
