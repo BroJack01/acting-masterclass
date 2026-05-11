@@ -1,0 +1,89 @@
+{
+  "id": "P0L0",
+  "phase": 0,
+  "lesson": 0,
+  "title": "Orientation",
+  "phase_name": "Orientation",
+  "epigraph": {
+    "quote": "The fire is not lit for the Griot. The fire is lit for the truth. The Griot is simply the one willing to stand in it.",
+    "attribution": "Brother Jack"
+  },
+  "acts": [
+    {
+      "number": "ONE",
+      "title": "Before We Begin",
+      "blocks": [
+        { "type": "slug",     "text": "INT. BLACK BOX THEATRE — NIGHT" },
+        { "type": "action",   "text": "An empty room. No seats arranged. No stage set. No lights beyond a single bulb swinging slowly above a bare wooden floor." },
+        { "type": "action",   "text": "BROTHER JACK enters from the side. He does not perform his entrance. He simply arrives. Stands at the centre of the room. Looks at the space." },
+        { "type": "action",   "text": "Then he looks at you." },
+        { "type": "character","text": "BROTHER JACK" },
+        { "type": "dialogue", "text": "You are here." },
+        { "type": "paren",    "text": "a beat" },
+        { "type": "dialogue", "text": "Not because the industry told you to come. Not because someone promised you fame or money or a way out of wherever you are." },
+        { "type": "paren",    "text": "a long beat" },
+        { "type": "dialogue", "text": "You are here because something in you — something older than your reasons — decided this was necessary." },
+        { "type": "action",   "text": "He walks slowly around the perimeter of the room. Looking at the walls. The floor. The ceiling." },
+        { "type": "character","text": "BROTHER JACK" },
+        { "type": "paren",    "text": "continuing" },
+        { "type": "dialogue", "text": "This curriculum has four phases." },
+        { "type": "dialogue", "text": "Phase One is about who you are." },
+        { "type": "dialogue", "text": "Phase Two is about what this body can do." },
+        { "type": "dialogue", "text": "Phase Three is about how you serve the text." },
+        { "type": "dialogue", "text": "Phase Four is about how you move through the world with what the first three phases built." },
+        { "type": "paren",    "text": "a beat" },
+        { "type": "dialogue", "text": "None of it is easy. All of it is necessary. And none of it works if you are here for the wrong reasons." },
+        { "type": "action",   "text": "He stops. At the centre of the room. He draws a circle on the floor with chalk. Slow. Deliberate. Then a dot at its centre." },
+        { "type": "character","text": "BROTHER JACK" },
+        { "type": "dialogue", "text": "Sit in the circle." },
+        { "type": "action",   "text": "A beat. Then — quietly, with full weight:" },
+        { "type": "character","text": "BROTHER JACK" },
+        { "type": "paren",    "text": "the instruction that begins everything" },
+        { "type": "dialogue", "text": "And begin." }
+      ]
+    },
+    {
+      "number": "TWO",
+      "title": "What Is Required",
+      "blocks": [
+        { "type": "slug",     "text": "INT. BLACK BOX THEATRE — CONTINUOUS" },
+        { "type": "action",   "text": "Brother Jack stands outside the circle. The student inside it. The distance between them — intentional." },
+        { "type": "character","text": "BROTHER JACK" },
+        { "type": "dialogue", "text": "Every lesson in this curriculum has a requirement before you can move to the next." },
+        { "type": "dialogue", "text": "Not a test. Not an exam." },
+        { "type": "paren",    "text": "a beat" },
+        { "type": "dialogue", "text": "A public act." },
+        { "type": "action",   "text": "He walks to a board. Writes five words: Facebook. WhatsApp. YouTube. TikTok. Instagram." },
+        { "type": "character","text": "BROTHER JACK" },
+        { "type": "dialogue", "text": "Open five accounts. One on each platform. Today. Before the next lesson begins." },
+        { "type": "dialogue", "text": "Not because social media is the work. Because the work requires witnesses. And the Griot who stands in the firelight stands in public." },
+        { "type": "paren",    "text": "a beat" },
+        { "type": "dialogue", "text": "Each lesson will ask you to post. Something specific. Something honest. Something that costs you the comfort of keeping it private." },
+        { "type": "dialogue", "text": "When you post — you include the lesson hashtag. That hashtag is the key that unlocks the next lesson. The system reads it. The system advances you." },
+        { "type": "paren",    "text": "a long beat" },
+        { "type": "dialogue", "text": "No post. No next lesson. Not because I am watching. Because the prior contract requires public commitment." },
+        { "type": "action",   "text": "He erases the five words. Writes one: DAILY." },
+        { "type": "character","text": "BROTHER JACK" },
+        { "type": "dialogue", "text": "Post every day. Not only for the lesson requirement. Every day." },
+        { "type": "dialogue", "text": "Document the journey. The difficulty. The discovery. The days when it costs you something." },
+        { "type": "paren",    "text": "a beat" },
+        { "type": "dialogue", "text": "You are building a village before you know you need one." },
+        { "type": "dialogue", "text": "Begin now." }
+      ]
+    }
+  ],
+  "direct_address": {
+    "intro": "To you. Before anything else.",
+    "blocks": [
+      { "type": "address", "text": "Welcome to the Joelhood Acting Master Class." },
+      { "type": "address", "text": "What you are about to receive is not a collection of techniques. It is a formation. Complete, sequential, and cumulative. Each phase builds on the one before. Each lesson builds on the one before. You cannot skip. You cannot rush. The system will not let you." },
+      { "type": "address", "text": "That is not a restriction. That is a protection. Against the habit of consuming without being changed." },
+      { "type": "address", "text": "The requirement for this orientation lesson is simple: open your five accounts. Post about why you came. Not the polished version. The true one. Include the hashtag. And let the journey begin." },
+      { "type": "address", "text": "The Griot does not wait for perfect conditions. The Griot stands up. And begins." }
+    ]
+  },
+  "requirement": {
+    "hashtag": "#JoelhoodOrientation",
+    "prompt": "Post about why you decided to begin this training. Not what you hope to get. Why you came. Include #JoelhoodOrientation."
+  }
+}
