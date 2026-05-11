@@ -1,0 +1,224 @@
+{
+  "id": "P3L2",
+  "phase": 3,
+  "lesson": 2,
+  "title": "Who Was This Person",
+  "phase_name": "Phase Three — The Text",
+  "epigraph": {
+    "quote": "You cannot play a character you do not know. You can imitate one. You can indicate one. But you cannot play one. Playing requires knowing. And knowing requires excavation.",
+    "attribution": "Brother Jack"
+  },
+  "acts": [
+    {
+      "number": "ONE",
+      "title": "The Excavation",
+      "blocks": [
+        {
+          "type": "slug",
+          "text": "INT. LIBRARY — NIGHT"
+        },
+        {
+          "type": "action",
+          "text": "A blank page on the table. And a list of questions Brother Jack has written. Long."
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "Before you speak the first line — you must know who is speaking it."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "Not the facts. The biography in the script."
+        },
+        {
+          "type": "dialogue",
+          "text": "The wound. The thing that happened before the play began that made this person who they are when the play finds them."
+        },
+        {
+          "type": "paren",
+          "text": "a long beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "Every human being has a wound. An experience — chosen or unchosen — that shaped the architecture of how they move through the world."
+        },
+        {
+          "type": "dialogue",
+          "text": "Your character has one. Even if the writer never named it."
+        },
+        {
+          "type": "dialogue",
+          "text": "Especially if the writer never named it."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "Your job is to find it."
+        }
+      ]
+    },
+    {
+      "number": "TWO",
+      "title": "The Scar and the Want",
+      "blocks": [
+        {
+          "type": "slug",
+          "text": "INT. LIBRARY — CONTINUOUS"
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "The wound is what happened. The scar is what the person built over it."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "Most characters are defined not by their wound but by their scar. The defence. The strategy. The personality they developed to survive what happened."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "And underneath the scar — the want."
+        },
+        {
+          "type": "dialogue",
+          "text": "The deepest want. The one they will never say directly."
+        },
+        {
+          "type": "dialogue",
+          "text": "The one that drives every choice they make in every scene."
+        },
+        {
+          "type": "paren",
+          "text": "a long beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "She wants to be chosen. Not kept. Not tolerated. Not managed."
+        },
+        {
+          "type": "dialogue",
+          "text": "Chosen."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "That want — underneath everything she says — is the character."
+        },
+        {
+          "type": "dialogue",
+          "text": "The lines are how she tries to get it."
+        }
+      ]
+    },
+    {
+      "number": "THREE",
+      "title": "The Secret",
+      "blocks": [
+        {
+          "type": "slug",
+          "text": "INT. LIBRARY — LATER"
+        },
+        {
+          "type": "character",
+          "text": "BROTHER JACK"
+        },
+        {
+          "type": "dialogue",
+          "text": "One more thing. The biggest secret."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "The thing your character will never tell anyone. In the play or in their life."
+        },
+        {
+          "type": "dialogue",
+          "text": "Not a plot secret. A personal one."
+        },
+        {
+          "type": "dialogue",
+          "text": "The thing they would die before admitting."
+        },
+        {
+          "type": "paren",
+          "text": "a beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "Write it. On a piece of paper. Fold it. Keep it."
+        },
+        {
+          "type": "dialogue",
+          "text": "Tell no one."
+        },
+        {
+          "type": "paren",
+          "text": "a long beat"
+        },
+        {
+          "type": "dialogue",
+          "text": "That secret is the engine of every scene."
+        },
+        {
+          "type": "dialogue",
+          "text": "The audience will never know it explicitly."
+        },
+        {
+          "type": "paren",
+          "text": "the close"
+        },
+        {
+          "type": "dialogue",
+          "text": "But they will feel it."
+        },
+        {
+          "type": "dialogue",
+          "text": "In every pause. In every look. In every line that costs the character something."
+        }
+      ]
+    }
+  ],
+  "direct_address": {
+    "intro": "To you.",
+    "blocks": [
+      {
+        "type": "address",
+        "text": "The character you build in this lesson — the wound, the scar, the want, the secret — carries through every Phase Three lesson that follows. Do not rush this excavation."
+      },
+      {
+        "type": "address",
+        "text": "The secret especially. Write it down. Keep it. Carry it into every scene. It will change the quality of every silence you hold."
+      }
+    ]
+  },
+  "requirement": {
+    "hashtag": "#JoelhoodP3L2",
+    "prompt": "Post your character's wound. Not the backstory — the wound underneath it. The thing that happened that shaped everything else. One paragraph. Honest. Include #JoelhoodP3L2."
+  }
+}
