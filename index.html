@@ -287,32 +287,6 @@ main { flex: 1; max-width: 900px; margin: 0 auto; width: 100%; padding: 48px 24p
 .complete-final  { font-family: var(--font-script); font-size: 11px; letter-spacing: 3px; color: var(--gold); text-transform: uppercase; line-height: 2; }
 
 
-/* ── INSTALL BANNER ──────────────────────────────────────── */
-.install-banner {
-  padding: 12px 24px; background: #1a2235;
-  border-bottom: 1px solid var(--gold-dim);
-  display: none; align-items: center;
-  justify-content: space-between; gap: 12px;
-}
-.install-banner.visible { display: flex; }
-.install-banner-text {
-  font-family: var(--font-script); font-size: 11px;
-  letter-spacing: 1px; color: var(--cream-dim);
-}
-.install-banner-text strong { color: var(--gold); }
-.install-banner-actions { display: flex; gap: 8px; flex-shrink: 0; }
-.install-btn {
-  background: var(--gold); color: var(--bg);
-  font-family: var(--font-script); font-size: 10px;
-  letter-spacing: 2px; text-transform: uppercase;
-  padding: 8px 16px; border: none; border-radius: 2px;
-  cursor: pointer; white-space: nowrap;
-}
-.install-dismiss {
-  background: transparent; border: none;
-  color: var(--muted); font-size: 18px;
-  cursor: pointer; padding: 0 4px; line-height: 1;
-}
 
 .fade-in { animation: fadeIn .5s ease forwards; }
 @keyframes fadeIn { from{opacity:0;transform:translateY(8px)} to{opacity:1;transform:translateY(0)} }
@@ -382,12 +356,6 @@ main { flex: 1; max-width: 900px; margin: 0 auto; width: 100%; padding: 48px 24p
     </div>
   </header>
   <div class="deadline-banner" id="deadline-banner"></div>
-  <div class="install-banner" id="install-banner">
-    <span class="install-banner-text"><strong>Install AMC</strong> — add to your home screen for instant access to your lessons.</span>
-    <div class="install-banner-actions">
-      <button class="install-btn" onclick="triggerInstall()">Install</button>
-      <button class="install-dismiss" onclick="dismissInstall()" aria-label="Dismiss">×</button>
-    </div>
   </div>
   <div class="progress-bar" id="progress-bar" style="display:none;">
     <div class="progress-inner" id="progress-inner"></div>
@@ -517,7 +485,9 @@ function enforceSequence(phase, requestedLesson, lessonsStr) {
   for (const l of lessons) {
     if (!done.has(`P${phase}L${l}`)) return l;
   }
-  return requestedLesson;
+  return (requestedLesson !== null && requestedLesson !== undefined)
+    ? requestedLesson
+    : (lessons[0] !== undefined ? lessons[0] : 0);
 }
 
 // ── AUTH SCREEN ───────────────────────────────────────────────
@@ -809,8 +779,7 @@ function renderRequirement(data, parent) {
     comp.appendChild(el('div', 'req-complete-mark', '✓'));
     comp.appendChild(el('div', 'req-complete-text', 'Requirement submitted. Lesson complete.'));
     section.appendChild(comp);
-    const next = buildNextPanel(data);
-    if (next) section.appendChild(next);
+    buildNextPanel(data).then(next => { if (next) section.appendChild(next); });
   } else {
     const form = el('div', 'req-form');
 
@@ -875,8 +844,8 @@ async function submitRequirement(data, urlInput, tagInput, btn, feedback) {
       if (result.phaseComplete)      { setTimeout(() => renderPhaseGate(data.phase + 1), 1500); return; }
 
       if (result.nextLesson !== null && result.nextLesson !== undefined) {
-        setTimeout(() => {
-          const next = buildNextPanel(data);
+        setTimeout(async () => {
+          const next = await buildNextPanel(data);
           if (next) {
             const sec = document.querySelector('.requirement-section');
             if (sec) { sec.appendChild(next); next.classList.add('visible'); }
@@ -893,20 +862,29 @@ async function submitRequirement(data, urlInput, tagInput, btn, feedback) {
   }
 }
 
-function showFb(el, type, msg) {
-  el.className = `${el.className.split(' ')[0]} ${type}`;
-  el.textContent = msg;
+function showFb(elem, type, msg) {
+  elem.className = `screen-feedback ${type}`;
+  elem.textContent = msg;
 }
 
-function buildNextPanel(data) {
+async function buildNextPanel(data) {
   const lessons = PHASES[data.phase] ? PHASES[data.phase].lessons : [];
   const idx     = lessons.indexOf(Number(data.lesson));
   if (idx < 0 || idx >= lessons.length - 1) return null;
   const nextLesson = lessons[idx + 1];
 
+  let nextTitle = `Lesson ${nextLesson}`;
+  try {
+    const res = await fetch(`${LESSONS_BASE}/P${data.phase}L${nextLesson}.json`);
+    if (res.ok) {
+      const nd = await res.json();
+      if (nd.title) nextTitle = nd.title;
+    }
+  } catch {}
+
   const panel = el('div', 'next-lesson-panel');
   panel.appendChild(el('div', 'next-label', 'Next Lesson'));
-  panel.appendChild(el('div', 'next-title', `Lesson ${nextLesson}`));
+  panel.appendChild(el('div', 'next-title', nextTitle));
   const btn = document.createElement('button');
   btn.className = 'next-btn'; btn.textContent = 'Continue →';
   btn.onclick = async () => {
@@ -930,15 +908,19 @@ function renderPhaseGate(nextPhaseNum) {
   const div = el('div', 'full-screen-panel fade-in');
   div.appendChild(el('span', 'panel-icon', '🔥'));
   div.appendChild(el('div',  'panel-title', prev ? `${prev} complete.` : 'Phase complete.'));
-  div.appendChild(el('div',  'panel-sub',   `${pName} is waiting.\nPayment is required to continue.`));
+  const isFromFree = (nextPhaseNum === 1);
+  const gateSub = isFromFree
+    ? `You have completed the free orientation. ${pName} requires payment to begin.`
+    : `${pName} is waiting. Payment is required to continue.`;
+  div.appendChild(el('div',  'panel-sub', gateSub));
   div.appendChild(el('div',  'panel-price-label', 'Investment'));
-  div.appendChild(el('div',  'panel-amount',  price.toLocaleString()));
+  div.appendChild(el('div',  'panel-amount',  Number(price).toFixed(0)));
   div.appendChild(el('div',  'panel-currency','Zambian Kwacha (ZMW)'));
 
   const instr = el('div', 'panel-instructions');
   instr.innerHTML = `
     <strong>How to unlock ${pName}:</strong><br><br>
-    1. Send <strong>K${price.toLocaleString()} ZMW</strong> via MoMo to Joelhood Pictures.<br>
+    1. Send <strong>K${Number(price).toFixed(0)} ZMW</strong> via MoMo to Joelhood Pictures.<br>
     2. Use your name as the payment reference.<br>
     3. Once your payment is confirmed, your next phase will unlock automatically and you will receive an email.<br><br>
     <strong>Contact:</strong> joelhoodpictures@gmail.com · +260977858275
@@ -960,13 +942,13 @@ function renderExpired(phaseNum) {
   div.appendChild(el('div',  'panel-sub',
     `Your access to ${pName} has expired. To restart this phase, payment is required.`));
   div.appendChild(el('div',  'panel-price-label', 'Restart Fee'));
-  div.appendChild(el('div',  'panel-amount',  price.toLocaleString()));
+  div.appendChild(el('div',  'panel-amount',  Number(price).toFixed(0)));
   div.appendChild(el('div',  'panel-currency','Zambian Kwacha (ZMW)'));
 
   const instr = el('div', 'panel-instructions');
   instr.innerHTML = `
     <strong>To restart ${pName}:</strong><br><br>
-    1. Send <strong>K${price.toLocaleString()} ZMW</strong> via MoMo to Joelhood Pictures.<br>
+    1. Send <strong>K${Number(price).toFixed(0)} ZMW</strong> via MoMo to Joelhood Pictures.<br>
     2. Use your name as the payment reference.<br>
     3. Once confirmed, your phase access will be restored from the beginning.<br><br>
     <strong>Contact:</strong> joelhoodpictures@gmail.com · +260977858275
@@ -1026,41 +1008,6 @@ document.addEventListener('keydown', e => {
   }
 });
 
-// ── PWA INSTALL PROMPT ────────────────────────────────────────
-let _installPrompt = null;
-
-window.addEventListener('beforeinstallprompt', e => {
-  e.preventDefault();
-  _installPrompt = e;
-  // Show banner only if student is logged in and hasn't dismissed
-  if (!localStorage.getItem('jhl_install_dismissed')) {
-    document.getElementById('install-banner').classList.add('visible');
-  }
-});
-
-window.addEventListener('appinstalled', () => {
-  document.getElementById('install-banner').classList.remove('visible');
-  _installPrompt = null;
-});
-
-async function triggerInstall() {
-  if (_installPrompt) {
-    _installPrompt.prompt();
-    const { outcome } = await _installPrompt.userChoice;
-    if (outcome === 'accepted') {
-      document.getElementById('install-banner').classList.remove('visible');
-    }
-    _installPrompt = null;
-  } else {
-    // Fallback — browser does not support prompt, show manual instruction
-    alert('To install:\nAndroid: tap the browser menu (⋮) → Add to Home Screen\niOS Safari: tap Share (□↑) → Add to Home Screen');
-  }
-}
-
-function dismissInstall() {
-  document.getElementById('install-banner').classList.remove('visible');
-  localStorage.setItem('jhl_install_dismissed', '1');
-}
 
 
 init();
