@@ -165,7 +165,7 @@ header {
 .lesson-seg.current { background: var(--gold); }
 
 /* ── MAIN ────────────────────────────────────────────────── */
-main { flex: 1; max-width: 900px; margin: 0 auto; width: 100%; padding: 48px 24px 120px; }
+main { flex: 1; max-width: 900px; margin: 0 auto; width: 100%; padding: 24px 24px 120px; }
 
 /* ── LESSON HEADER ───────────────────────────────────────── */
 .lesson-header { margin-bottom: 48px; padding-bottom: 32px; border-bottom: 1px solid var(--border); }
@@ -295,7 +295,7 @@ main { flex: 1; max-width: 900px; margin: 0 auto; width: 100%; padding: 48px 24p
 ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
 
 @media (max-width: 640px) {
-  main { padding: 32px 16px 80px; }
+  main { padding: 16px 16px 80px; }
   .direct-address-section, .requirement-section { padding: 28px 20px; }
   .block-character, .block-character_vo, .block-paren, .block-dialogue { max-width: 100%; }
   .submit-btn { width: 100%; text-align: center; }
@@ -356,7 +356,6 @@ main { flex: 1; max-width: 900px; margin: 0 auto; width: 100%; padding: 48px 24p
     </div>
   </header>
   <div class="deadline-banner" id="deadline-banner"></div>
-  </div>
   <div class="progress-bar" id="progress-bar" style="display:none;">
     <div class="progress-inner" id="progress-inner"></div>
   </div>
@@ -377,7 +376,7 @@ const PHASES = {
   4: { name: 'Phase Four — The World',     lessons: [1,2,3,4,5,6] },
 };
 
-const PHASE_PRICES = { 1:100, 2:100, 3:100, 4:100 };
+const PHASE_PRICES = { 1:299, 2:399, 3:399, 4:499 };
 
 let STATE = {
   token:       null,
