@@ -4,7 +4,7 @@
 // Lesson JSON files fetched fresh when connected
 // ============================================================
 
-const CACHE_NAME    = "joelhood-amc-v1";
+const CACHE_NAME    = "joelhood-amc-v2";
 const SHELL_FILES   = [
   "/acting-masterclass/",
   "/acting-masterclass/index.html",
